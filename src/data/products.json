@@ -1,0 +1,111 @@
+{
+    "heroSlides": [
+        {
+            "tagline": "Discover Eco-Friendly Basics.",
+            "title": "Mix & Match",
+            "subtitle": "with Sustainable Fall Outfits",
+            "image": "assets/images/home/homeBanner1.jpg",
+            "alt": "Eco-friendly and sustainable outfit collection for fall, featuring mix and match styles in green fashion",
+            "link": "#"
+        },
+        {
+            "tagline": "Winter is Coming!",
+            "title": "Winter New Releases",
+            "subtitle": "Shop the Latest Sustainable Essentials",
+            "image": "assets/images/home/homeBanner2.jpg",
+            "alt": "Promotional banner for eco-friendly winter fashion release, featuring sustainable green fashion essentials",
+            "link": "#"
+        }
+    ],
+    "featuredProducts": [
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men1.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Cropped Polo",
+            "price": "$60",
+            "image": "assets/images/model/women1.jpg",
+            "alt": "Model wearing a cropped polo",
+            "link": "#"
+        },
+        {
+            "name": "Cotton T-shirt",
+            "price": "$60",
+            "image": "assets/images/model/women2.jpg",
+            "alt": "Model wearing a cotton T-shirt",
+            "link": "#"
+        },
+        {
+            "name": "Basics. Everyday Sweat Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men2.jpg",
+            "alt": "Model wearing an everyday sweatshirt",
+            "link": "#"
+        },
+        {
+            "name": "Essential Zip-Up Hoodie",
+            "price": "$60.99",
+            "image": "assets/images/model/men3.jpg",
+            "alt": "Model wearing an essential zip-up hoodie",
+            "link": "#"
+        },
+        {
+            "name": "Press T-Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men4.jpg",
+            "alt": "Model wearing a press T-shirt",
+            "link": "#"
+        }
+    ],
+    "instagramPosts": [
+        {
+            "image": "assets/images/home/ig1.jpg",
+            "alt": "instagram post 1",
+            "link": "#"
+        },
+        {
+            "image": "assets/images/home/ig2.jpg",
+            "alt": "instagram post 2",
+            "link": "#"
+        },
+        {
+            "image": "assets/images/home/ig3.jpg",
+            "alt": "instagram post 3",
+            "link": "#"
+        },
+        {
+            "image": "assets/images/home/ig4.jpg",
+            "alt": "instagram post 4",
+            "link": "#"
+        },
+        {
+            "image": "assets/images/home/ig5.jpg",
+            "alt": "instagram post 5",
+            "link": "#"
+        }
+    ],
+    "featuredCategories": [
+        {
+            "title": "Essential Basics",
+            "image": "assets/images/home/homeFeature1.jpg",
+            "alt": "Essential basics clothing category",
+            "link": "#"
+        },
+        {
+            "title": "Season Staples",
+            "image": "assets/images/home/homeFeature2.jpg",
+            "alt": "Season staples clothing category",
+            "link": "#"
+        },
+        {
+            "title": "ECOBasics",
+            "image": "assets/images/home/homeFeature3.jpg",
+            "alt": "ECOBasics clothing category",
+            "link": "#"
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer base {
+    h1 {
+        @apply font-gothic font-bold text-3xl md:text-4xl lg:text-5xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h3 {
+        @apply text-xl font-bold md:text-2xl font-gothic;
+    }
+
+    h4 {
+        @apply text-lg
+    }
+
+    a {
+        @apply text-base md:text-lg;
+    }
+
+    .max-container {
+        @apply max-w-[90rem] px-8 mx-auto lg:px-12 xl:px-16;
+    }
+
+    section {
+        @apply mb-12 md:mb-14 lg:mb-16;
+    }
+
+    img {
+        @apply max-w-full;
+    }
+
+    .primary-cta {
+        @apply px-8 py-4 bg-white text-dark-grey uppercase tracking-widest hover:bg-gold hover:text-white transition duration-300;
+    }
+}
+
+
+@layer components {
+
+    /* header */
+    .navbar_menu_wrapper {
+        @apply p-4 flex items-center justify-between bg-white hover:bg-light-beige transition duration-500 ease-in-out lg:gap-2 lg:p-0 lg:hover:bg-white lg:hover:text-gold;
+    }
+
+    .navbar_menu_arrow-icon {
+        @apply text-xl text-center lg:transform lg:transition-transform lg:duration-200 ease-in-out lg:group-hover:rotate-180;
+    }
+
+    .navbar_submenu {
+        @apply py-4 pl-6 bg-white hover:bg-light-blue transition duration-500 ease-in-out lg:whitespace-nowrap lg:p-4;
+    }
+
+    /* hero slick */
+    .hero_background {
+        @apply relative h-[80vh] bg-cover bg-center text-center flex justify-center items-center;
+    }
+
+    .hero_background::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 1;
+    }
+
+    .hero_content {
+        @apply relative z-10 max-w-[500px] h-[80vh] mx-auto flex flex-col justify-center items-center;
+    }
+
+    /* home- about */
+    .secondary-cta::after {
+        content: "";
+        position: absolute;
+        background-color: #B39E73;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: .3s ease-in-out;
+    }
+
+    .secondary-cta:hover::after {
+        width: 100%;
+    }
+
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(42, 42, 42, 0.4);
+        z-index: 1;
+        border-radius: inherit;
+    }
+
+}
