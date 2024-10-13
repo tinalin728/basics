@@ -27,7 +27,7 @@ export function fetchAndRenderSlickData() {
                     </div>
                 </div>`;
 
-                heroSliders.innerHTML += heroContent;  // Append the hero content here
+                heroSliders.innerHTML += heroContent;
             });
 
             console.log('Hero Sliders Element:', heroSliders);

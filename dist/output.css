@@ -1217,6 +1217,11 @@ img {
   color: rgb(179 158 115 / var(--tw-text-opacity));
 }
 
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(125 124 90 / var(--tw-text-opacity));
+}
+
 .text-light-blue {
   --tw-text-opacity: 1;
   color: rgb(222 231 237 / var(--tw-text-opacity));

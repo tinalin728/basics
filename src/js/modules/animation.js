@@ -6,8 +6,7 @@ export function animation() {
     window.addEventListener('scroll', checkHighlight);
 
     function checkHighlight() {
-        const triggerOffset = 250;
-        const triggerBottom = (window.innerHeight - triggerOffset);
+        const triggerBottom = (window.innerHeight / 2);
         console.log(triggerBottom)
 
         highlight.forEach(slide => {

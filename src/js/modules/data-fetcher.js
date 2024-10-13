@@ -15,5 +15,5 @@ export function fetchAndRenderItems() {
                 featuredCategories.innerHTML += categoryCard;
             });
         })
-        .catch(error => console.error('Error fetching data:', error)); // Add error handling
+        .catch(error => console.error('Error fetching data:', error));
 }
