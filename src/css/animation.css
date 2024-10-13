@@ -24,9 +24,16 @@
     width: 0;
     opacity: 0;
     transition: opacity .1s ease-in-out, width .8s ease-in-out;
+    transform-origin: right;
 }
 
 .animate-slide.active {
     width: 100%;
     opacity: 1;
+}
+
+.animate-slide.reverse {
+    width: 0;
+    opacity: 0;
+    transition: width .8s ease-in-out, opacity 2s ease-in-out;
 }

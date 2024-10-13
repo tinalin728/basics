@@ -15,7 +15,7 @@
     }
 
     h2 {
-        @apply text-xl;
+        @apply text-2xl md:text-3xl lg:text-4xl font-gothic;
     }
 
     h3 {
@@ -23,11 +23,15 @@
     }
 
     h4 {
-        @apply text-lg
+        @apply text-lg font-gothic;
     }
 
     a {
         @apply text-base md:text-lg;
+    }
+
+    p {
+        @apply font-arial text-lg
     }
 
     .max-container {

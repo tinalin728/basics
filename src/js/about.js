@@ -2,7 +2,7 @@ import { setupHamburgerMenu } from './modules/menu.js';
 
 import { animation } from './modules/animation.js';
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function () {
     setupHamburgerMenu();
     animation();
-});
+})
