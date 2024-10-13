@@ -38,6 +38,10 @@
         @apply max-w-[90rem] px-8 mx-auto lg:px-12 xl:px-16;
     }
 
+    main {
+        @apply overflow-hidden
+    }
+
     section {
         @apply mb-12 md:mb-14 lg:mb-16;
     }
