@@ -810,12 +810,20 @@ img {
   top: -2rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .left-1 {
   left: 0.25rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-1 {
@@ -886,6 +894,10 @@ img {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -898,6 +910,10 @@ img {
   display: none;
 }
 
+.h-1\/3 {
+  height: 33.333333%;
+}
+
 .h-\[150px\] {
   height: 150px;
 }
@@ -908,6 +924,14 @@ img {
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
 }
 
 .h-\[90vh\] {
@@ -936,6 +960,10 @@ img {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .flex-1 {
@@ -1025,8 +1053,22 @@ img {
   border-radius: 0.75rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-b-\[1px\] {
   border-bottom-width: 1px;
+}
+
+.border-gold {
+  --tw-border-opacity: 1;
+  border-color: rgb(179 158 115 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1037,6 +1079,11 @@ img {
 .bg-dark-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(47 46 45 / var(--tw-bg-opacity));
+}
+
+.bg-light-beige {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 243 235 / var(--tw-bg-opacity));
 }
 
 .bg-light-blue {
@@ -1061,6 +1108,10 @@ img {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -1072,6 +1123,15 @@ img {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .p-2 {
@@ -1111,6 +1171,10 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.indent-3 {
+  text-indent: 0.75rem;
 }
 
 .font-gothic {
@@ -1277,6 +1341,10 @@ img {
     margin-bottom: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-\[200px\] {
     height: 200px;
   }
@@ -1287,6 +1355,14 @@ img {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:gap-10 {
@@ -1308,6 +1384,10 @@ img {
 
   .md\:pb-14 {
     padding-bottom: 3.5rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-6xl {

@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Basics. | Affordable, Sustainable and Eco Friendly Clothing Lines</title>
     <meta name="description"
-        content="Explore sustainable and eco-friendly fashion at Basics. Quality pieces made with care for the environment. Shop now!">
+        content="Shop Basics for sustainable and eco-friendly clothing lines that prioritize ethical practices and stylish designs.">
+    <meta name="keywords"
+        content="sustainable clothing lines, eco-friendly clothing lines, sustainable fashion, eco-friendly fashion, ethical clothing, affordable clothing, essential clothing, organic clothing, conscious fashion, green fashion">
 
-    <title>Basics. | Sustainable, eco-Friendly basics essential clothing</title>
+
     <!-- font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -15,24 +18,12 @@
 
     <!-- Century Gothic Font -->
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-    <!-- slick -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/animation.css">
-
 </head>
 
-<body class="overflow-x-hidden">
-    <div class="js-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
-
-    </div>
+<body>
     <header class="font-gothic shadow-sm">
         <nav class="max-container py-6 flex justify-between items-center relative ">
 
@@ -131,6 +122,7 @@
                 </ul>
             </div>
 
+            <!-- mobile nav left -->
             <div class="flex gap-6 text-xl md:gap-10 lg:hidden">
                 <button class="js-toggle-menu">
                     <i class="fa fa-bars"></i>
@@ -140,9 +132,9 @@
                 </button>
             </div>
 
-            <div class="flex-grow flex justify-center lg:grow-0">
+            <a href="index.html" class="flex-grow flex justify-center lg:grow-0">
                 <img src="/src/assets/images/home/BasicsLogo.svg" alt="logo" width="120" class="lg:w-[150px]">
-            </div>
+            </a>
 
             <ul class="flex gap-6 md:gap-10 lg:gap-12">
                 <li class="hidden lg:block "><a href="#" class="hover:text-gold text-xl"><i
@@ -156,95 +148,132 @@
         </nav>
     </header>
 
-    <section class="hero h-[90vh] relative overflow-hidden">
-        <div id="hero-slider-output" class="relative h-full">
-        </div>
-
-        <!-- slider content appended here -->
-        <span
-            class="button--prev absolute top-1/2 left-1 text-white  h-[50px] w-[50px] rounded-full flex items-center justify-center -translate-y-1/2 cursor-pointer hover:bg-white hover:bg-opacity-15 hover:shadow-xl transform duration-500 md:left-4"><i
-                class="fa fa-2x fa-chevron-left" aria-hidden="true"></i></span>
-        <span
-            class="button--next absolute top-1/2 right-1 text-white h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer -translate-y-1/2 hover:bg-white hover:bg-opacity-15 hover:shadow-xl transform duration-500 md:right-4"><i
-                class="fa fa-2x fa-chevron-right" aria-hidden="true"></i></span>
-    </section>
-
-    <section class="featured-list">
-        <div class="max-container relative">
-            <h3>Latest Arrivals</h3>
-            <div class="flex gap-2 justify-end mb-4">
-                <div
-                    class="arrow-prev text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 ">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-                <div
-                    class="arrow-nxt text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500">
-                    <span><i class="fa fa-thin fa-arrow-right"></i></span>
+    <main class="overflow-hidden">
+        <section>
+            <div class=" relative h-[60vh]">
+                <img src="assets/images/about/aboutHero.jpg" alt="image of sustainable eco friendly clothing"
+                    class="object-cover w-full h-full">
+                <div class="absolute inset-0 flex flex-col justify-center items-center gap-8 bg-black bg-opacity-30">
+                    <h1 class="text-white"> Our Story. </h1>
+                    <h3 class="text-white">Redefine your essentials with the</h3>
+                    <h2 class="text-white font-bold uppercase">Basics.</h2>
                 </div>
             </div>
+        </section>
 
-            <div class="wrapper">
-                <div id="featured-list-output">
-                    <!-- feature list appended here -->
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="about bg-light-blue">
-        <div class="max-container relative py-12 md:py-14 lg:py-16">
-            <div class="spin-icon about__icon absolute -top-8">
-                <img src="assets/icons/sustainability.svg" alt="sustainable icon" width="80">
-            </div>
-            <div class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10">
-                <div class="about__content flex-1">
-                    <h1 class="mb-4">Introducing Sustainability with Quality</h1>
-                    <p class="mb-8">The Basics team is on a mission to provide quality pieces while utilizing
-                        sustainable practices that help reduce carbon emissions. At The Basics, we believe that fashion
-                        should not come at the cost of our planet...
-
+        <section>
+            <div
+                class="max-container flex flex-col justify-center items-center gap-4 md:flex-row md:justify-start md:items-start">
+                <h1 class="flex-1 text-center md:text-left"> Our <br>
+                    <span class="relative inline-block">
+                        <span
+                            class="highlight animate-slide absolute bottom-0 left-0 right-0 bg-light-beige h-1/3"></span>
+                        <span class="relative z-10 text-gold">Philosophy</span>
+                    </span>
+                </h1>
+                <div class="flex-1 indent-3">
+                    <p>At Basics., we believe that <i>less is more</i>. Our mission is to create timeless pieces that
+                        serve as
+                        the foundation of a versatile and conscious wardrobe. Our designs draw inspiration from the
+                        clean lines and neutral tones that define minimalist fashion. From essential t-shirts to
+                        versatile outerwear, our collection showcases a curated selection of basics that can be
+                        effortlessly mixed and matched.
                     </p>
-                    <div class="flex gap-2 items-center">
-                        <a href="about.html" class="secondary-cta relative">About Our Story</a>
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <br>
+                    <p>
+                        Each piece we create reflects our dedication to quality and simplicity. By prioritizing
+                        <span class="text-green">sustainability</span> and <span class="text-gold">functionality</span>,
+                        we empower our customers to embrace a lifestyle that values longevity over fleeting trends. As
+                        part of our commitment to sustainable clothing lines, we focus on creating garments that are not
+                        only stylish but also environmentally responsible.
+                    </p>
+                    <br>
+                    <p>
+                        Our philosophy revolves around the idea that true style is found in simplicity, allowing
+                        individuals to express themselves authentically without unnecessary distractions. We invite you
+                        to explore our collection and discover how these thoughtfully designed essentials can enhance
+                        your daily wardrobe.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex overflow-hidden h-[80vh]">
+            <img src="assets/images/about/about1.jpg" alt="" class="flex-1 object-cover h-full">
+            <img src="assets/images/about/about2.jpg" alt="" class="flex-1 object-cover object-left-bottom h-full">
+        </section>
+
+        <section>
+            <div
+                class="max-container flex flex-col justify-center items-center gap-4 md:flex-row md:justify-start md:items-start">
+                <h1 class="flex-1 text-center md:text-left"> Our <br>
+                    <span class="relative inline-block">
+                        <span
+                            class="highlight animate-slide absolute bottom-0 left-0 right-0 bg-light-beige h-1/3"></span>
+                        <span class="relative z-10 text-green">Commitment</span>
+                    </span>
+                </h1>
+                <div class="flex-1 indent-3">
+                    <p> <span class="font-medium uppercase">Sustainability</span> is at the core of
+                        everything we do. We are dedicated to reducing our environmental footprint through responsible
+                        sourcing, ethical manufacturing, and eco-friendly practices. Our fabrics are chosen for their
+                        quality and sustainability, including organic cotton, recycled materials, and low-impact dyes.
+                        We believe in creating eco-friendly clothing lines that not only look good but also do good for
+                        the planet.
+                    </p>
+                    <br>
+                    <p><span class="font-medium uppercase">Transparency</span> is also a vital part of our
+                        commitment. We are open about our practices, materials, and supply chain, ensuring our customers
+                        know where their products come from and how they are made. By sharing this information, we aim
+                        to build trust and encourage more informed decisions about fashion consumption.
+                    </p>
+                    <br>
+                    <p>In our pursuit of sustainability, we strive to educate our customers about the impact of their
+                        choices. By promoting eco-conscious practices, we hope to inspire others to make mindful
+                        decisions about their clothing and lifestyle. Together, we can create a ripple effect that
+                        encourages positive change in the fashion industry. Our commitment extends beyond just our
+                        products; we actively seek partnerships with organizations that promote environmental awareness
+                        and ethical practices, ensuring that our efforts contribute to a greater cause.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative h-screen mb-0">
+
+            <div class="absolute inset-0">
+                <img src="assets/images/about/about3.jpg" alt="" class="object-cover h-full w-full">
+            </div>
+
+            <div class="absolute inset-0 flex flex-col justify-center items-center">
+                <div class="bg-white p-12 bg-opacity-80 flex flex-col justify-center items-center gap-4 relative">
+                    <div class="flex flex-col items-center">
+                        <img src="assets/icons/sustainability.svg" alt="sustainable icon" width="50" class="spin-icon">
+                        <h1>Join Us</h1>
                     </div>
+
+                    <div class="indent-3 max-w-[600px]">
+                        <p> <span class="font-bold">Basics. </span> is more than a clothing line; it’s a movement
+                            towards a more sustainable and mindful way of living. By choosing our products, you support
+                            ethical fashion and contribute to a healthier planet. We believe that small changes can make
+                            a big difference, and we invite you to join us on this journey.
+                        </p>
+                    </div>
+                    <form class="flex flex-col  gap-4 md:block">
+                        <input class="p-2 border border-gray-500" type="email" placeholder="Enter your email" required>
+                        <button class="primary-cta  py-2 border border-gold" type="submit">Submit</button>
+                    </form>
                 </div>
-                <div class="about__image flex-1">
-                    <img src="assets/images/home/homeSustainable.jpg" alt="sustainable clothes">
-                </div>
             </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div class="max-container">
-            <h3 class="text-center mb-4">Browse Our Set Of Features</h3>
-            <div id="featured-category-output" class="grid grid-cols-12 gap-4 md:gap-6 md:p-8 lg:gap-8">
-                <!-- Cards appended here -->
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light-blue mb-0 md:mb-0 lg:mb-0 pb-12 md:pb-14 lg:pb-16;">
-        <div class="max-container py-12 md:py-14 lg:py-16">
-            <h4 class="text-center mb-4">How we like to #StyleInBasics</h4>
-            <h3 class="text-center mb-6">Follow Us @basics_clothing</h3>
-
-            <div id="sm-posts-output" class="cursor pointer">
-                <!-- sm posts appended here -->
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="bg-dark-grey">
         <div class="max-container  py-12 md:py-14 lg:py-16">
             <div class="flex flex-col gap-8 justify-between lg:flex-row">
                 <div class="flex flex-col gap-4">
                     <h3 class="text-light-grey">Subscribe to Our Newsletter</h3>
-                    <form>
+                    <form class="flex flex-col gap-4 md:block">
                         <input class="p-2" type="email" placeholder="Enter your email" required>
                         <button class="primary-cta  py-2" type="submit">Submit</button>
                     </form>
@@ -262,7 +291,7 @@
                 <div class="flex flex-col gap-4">
                     <h3 class="text-light-grey">Basics.</h3>
                     <ul class="text-white flex flex-col gap-2">
-                        <li class="hover:text-gold transition duration-300"><a href=" about.html">About Us</a></li>
+                        <li class="hover:text-gold transition duration-300"><a href="about.html">About Us</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Contact Us</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Terms of Service</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Cookies Used</a></li>
@@ -281,16 +310,8 @@
         </div>
     </footer>
 
-    <!-- jquery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- slick -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
-        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
-        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script type="module" src="/src/js/main.js"></script>
 
