@@ -30,6 +30,10 @@
         @apply text-base;
     }
 
+    i {
+        @apply text-xl
+    }
+
     p {
         @apply font-arial text-lg
     }

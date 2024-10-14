@@ -79,26 +79,6 @@ export function fetchFilter() {
 }
 
 export function fetchProducts() {
-    // <div id="product-card" class="product">
-    //     <div class="relative group">
-    //         <div
-    //             class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-10">
-    //         </div>
-    //         <button
-    //             class="absolute top-3 right-4 text-white text-2xl opacity-100 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-    //             <i class="fas fa-heart"></i>
-    //         </button>
-    //         <div
-    //             class="absolute bottom-6 right-0 left-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-    //             <a href="/" class="bg-white text-black py-2 px-8 rounded-full">Quick Overview</a>
-    //         </div>
-    //         <img src="./assets/images/model/men1.jpg" alt="Product 1" class="w-full">
-    //     </div>
-    //     <h3 class="mt-4">Product 1</h3>
-    //     <p>Description of Product 1</p>
-    //     <p class="price">$29.99</p>
-    // </div>
-
     fetch("data/products.json")
         .then(res => res.json())
         .then(data => {
@@ -111,16 +91,20 @@ export function fetchProducts() {
                 productCard.innerHTML = `
                  <div class="relative group">
                     <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-10"></div>
-                     <button class="absolute top-3 right-4 text-white text-2xl opacity-100 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-                        <i class="fas fa-heart"></i>
+
+                     <button class="absolute top-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
+                        <i class="fas fa-heart text-3xl"></i>
                      </button>
+
                     <div class="absolute bottom-6 right-0 left-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-                    <a href="${product.link}" class="bg-white text-black py-2 px-8 rounded-full">Quick Overview</a>
+                        <a href="${product.link}" class="bg-gold text-white py-2 px-10 rounded-full">Quick Overview</a>
                     </div>
                     <img src="${product.image}" alt="${product.alt}" class="w-full">
                 </div>
-                <h4 class="my-4">${product.name}</h4>
-                <p class="price">${product.price}</p>
+                <a href="${product.link}">
+                    <h4 class="my-2 hover:text-gray-600">${product.name}</h4>
+                    <p class="price">${product.price}</p>
+                </a>
                 `
 
                 menProducts.appendChild(productCard);
