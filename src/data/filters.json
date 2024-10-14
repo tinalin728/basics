@@ -1,0 +1,47 @@
+{
+    "categories": [
+        "View All",
+        "New Arrivals",
+        "Tops",
+        "Bottoms",
+        "Jackets / Coats",
+        "Activewear",
+        "Sales"
+    ],
+    "collections": [
+        "EcoBasics",
+        "All Collaborations"
+    ],
+    "sizes": {
+        "letters": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "numbers": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+        ]
+    },
+    "colors": [
+        "Red",
+        "Blue",
+        "Black",
+        "White",
+        "Beige",
+        "Grey",
+        "Yellow"
+    ]
+}

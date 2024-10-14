@@ -107,5 +107,77 @@
             "alt": "ECOBasics clothing category",
             "link": "#"
         }
+    ],
+    "menProducts": [
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men1.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Basics. Everyday Sweat Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men2.jpg",
+            "alt": "Model wearing an everyday sweatshirt",
+            "link": "#"
+        },
+        {
+            "name": "Essential Zip-Up Hoodie",
+            "price": "$60.99",
+            "image": "assets/images/model/men3.jpg",
+            "alt": "Model wearing an essential zip-up hoodie",
+            "link": "#"
+        },
+        {
+            "name": "Press T-Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men4.jpg",
+            "alt": "Model wearing a press T-shirt",
+            "link": "#"
+        },
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men5.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men6.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men7.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men8.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men9.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        },
+        {
+            "name": "Ripstop Shirt",
+            "price": "$60",
+            "image": "assets/images/model/men10.jpg",
+            "alt": "Model wearing a ripstop shirt",
+            "link": "#"
+        }
     ]
 }

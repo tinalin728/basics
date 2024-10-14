@@ -46,12 +46,19 @@ export function fetchAndRenderSlickData() {
             // New arrivals product list
             data.featuredProducts.forEach(product => {
                 const productCard = `
-                <div class="pr-4">
-                    <a href="${product.link}">
+                <div class="pr-4 ">
+                    <div class="relative">
+                    <div>
                         <img src="${product.image}" alt="${product.name}" class="mb-4">
-                        <h4 class="mb-2">${product.name}</h4>
-                        <p>${product.price}</p>
-                    </a>
+                        <a href="${product.link}">
+                            <h4 class="mb-2">${product.name}</h4>
+                            <p>${product.price}</p>
+                        </a>
+                    </div>
+                        <button class="absolute top-4 right-4 text-3xl text-gray-400">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
                 </div>`;
                 newArrivalsList.innerHTML += productCard;
             });

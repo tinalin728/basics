@@ -23,11 +23,11 @@
     }
 
     h4 {
-        @apply text-lg font-gothic;
+        @apply text-lg font-arial;
     }
 
     a {
-        @apply text-base md:text-lg;
+        @apply text-base;
     }
 
     p {
@@ -39,7 +39,7 @@
     }
 
     main {
-        @apply overflow-hidden
+        @apply overflow-x-hidden
     }
 
     section {
