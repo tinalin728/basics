@@ -1,13 +1,13 @@
 
 import { setupHamburgerMenu } from './modules/menu.js';
-import { fetchAndRenderSlickData } from './modules/slick-init.js';
-import { fetchAndRenderItems } from './modules/data-fetcher.js';
+import { fetchAndRenderSlickData } from './modules/slickInit.js';
+import { fetchFeaturedCardData } from './modules/dataFetcher.js';
 
 
 document.addEventListener("DOMContentLoaded", function () {
     setupHamburgerMenu();
     fetchAndRenderSlickData();
-    fetchAndRenderItems('data/products.json', '#featured-category-output', 'featuredCategories');
+    fetchFeaturedCardData('data/products.json', '#featured-category-output', 'featuredCategories');
 })
 
 

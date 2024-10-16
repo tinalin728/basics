@@ -1,5 +1,6 @@
 import { setupHamburgerMenu } from "./modules/menu.js";
-import { fetchFilterCategory, fetchProducts, fetchFilterOptions } from "./modules/data-fetcher.js"
+import { fetchProductList } from "./modules/dataFetcher.js"
+import { fetchFilterOptions, fetchFilterCategory } from "./modules/filter.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     setupHamburgerMenu();
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { filterOptType: 'colors', containerId: '#color-filter' }
     ])
 
-    fetchProducts('data/products.json', '#product-list', 'menProducts');
+    fetchProductList('data/products.json', '#product-list', 'menProducts');
 
 
 
