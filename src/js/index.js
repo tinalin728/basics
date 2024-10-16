@@ -7,7 +7,7 @@ import { fetchAndRenderItems } from './modules/data-fetcher.js';
 document.addEventListener("DOMContentLoaded", function () {
     setupHamburgerMenu();
     fetchAndRenderSlickData();
-    fetchAndRenderItems();
+    fetchAndRenderItems('data/products.json', '#featured-category-output', 'featuredCategories');
 })
 
 

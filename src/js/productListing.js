@@ -1,10 +1,24 @@
 import { setupHamburgerMenu } from "./modules/menu.js";
-import { fetchFilter, fetchProducts } from "./modules/data-fetcher.js"
+import { fetchFilterCategory, fetchProducts, fetchFilterOptions } from "./modules/data-fetcher.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     setupHamburgerMenu();
-    fetchFilter();
-    fetchProducts();
+    fetchFilterCategory('data/filters.json',
+        [
+            { filterCatType: 'categories', containerId: '#categories-list' },
+            { filterCatType: 'collections', containerId: '#collection-list' }
+        ]
+    );
+
+    fetchFilterOptions('data/filters.json', [
+        { filterOptType: 'sizes.letters', containerId: '#size-filter' },
+        { filterOptType: 'sizes.numbers', containerId: '#size-filter' },
+        { filterOptType: 'colors', containerId: '#color-filter' }
+    ])
+
+    fetchProducts('data/products.json', '#product-list', 'menProducts');
+
+
 
     // sort by options menu
     const toggleOptions = document.querySelector('.js-options-toggle');

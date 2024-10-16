@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics Men's Clothing | Sustainable, eco-Friendly basics essential clothing</title>
+    <title>Essential Zip-up Hoodie | Basics. | Sustainable, eco-Friendly basics essential clothing </title>
+
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,10 +17,6 @@
 
     <!-- style -->
     <link href="/dist/output.css" rel="stylesheet">
-
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -144,116 +141,29 @@
 
         </nav>
     </header>
+
     <div class="max-container pt-20">
         <nav aria-label="Breadcrumb" class="py-4">
-            <ol class="flex">
-                <li class="text-gray-500">
-                    <a href="/" class="text-sm">Men's Clothing</a>
+            <ol class="flex items-center gap-2 text-gray-500">
+                <li class="flex items-center gap-2">
+                    <a href="/" class="text-sm">Men's</a>
+                    <i class="fa-solid fa-angle-right text-sm"></i>
+                </li>
+                <li class="flex items-center gap-2">
+                    <a href="/" class="text-sm">Jackets / Coats</a>
+                    <i class="fa-solid fa-angle-right text-sm"></i>
+                </li>
+                <li>
+                    <a href="/" class="text-sm">Zip-Up Hoodies</a>
                 </li>
             </ol>
         </nav>
     </div>
 
-    <div class="max-container flex gap-8">
-        <!-- Sidebar -->
-        <aside class="hidden md:block w-[250px] sticky top-20 h-full pt-12">
-            <nav aria-label="Product Categories Navigation" class="mb-6">
-                <span class="text-sm font-light text-gold uppercase tracking-wide"> Categories </span>
-                <ul id="categories-list" class="mb-4">
-                    <!-- list appended here -->
-                </ul>
-                <span class="text-sm font-light text-gold uppercase tracking-wide"> Collections </span>
-                <ul id="collection-list">
-                    <!-- list appended here -->
-                </ul>
-            </nav>
+    <main>
 
-            <div class="border-b border-gray-500 border-dotted py-2 cursor-pointer">
-                <div class="js-filter-expand flex items-center justify-between mb-2">
-                    <span> Size </span>
-                    <i class="js-filter-icon fa-solid fa-plus "></i>
-                </div>
-                <div class="js-filter-menu hidden">
-                    <div id="size-filter" class="flex flex-col gap-2">
-                        <!-- size filter appended here -->
-                    </div>
-                </div>
-            </div>
+    </main>
 
-            <div class="border-b border-gray-500 border-dotted py-2 cursor-pointer">
-                <div class="js-filter-expand flex items-center justify-between mb-2">
-                    <span> Color </span>
-                    <i class="js-filter-icon fa-solid fa-plus"></i>
-                </div>
-                <div class="js-filter-menu hidden">
-                    <div id="color-filter" class="flex flex-col gap-2">
-                        <!-- color filter appended here -->
-                    </div>
-                </div>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="flex-1">
-            <div class="flex justify-between items-start">
-                <h3>Men's</h3>
-                <div class="relative z-50">
-                    <div
-                        class="w-[250px] js-options-toggle flex items-center justify-between border py-1 px-4 rounded-full cursor-pointer">
-                        <a class="">
-                            <span class="text-base">Sort by: </span>
-                            <span class="js-option-selected text-base">Recommended</span>
-                        </a>
-                        <i class="js-option-icon fa fa-angle-down text-base"></i>
-                    </div>
-                    <ul class="js-options-menu hidden absolute right-0 top-full pl-4 w-[250px] bg-white shadow-md text-base cursor-pointer"
-                        role="listbox" aria-labelledby="dropdown-label">
-                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option" aria-selected="true"
-                            data-value="recommended">Recommended</li>
-                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
-                            aria-selected="false" data-value="newest">Newest</li>
-                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
-                            aria-selected="false" data-value="top-rated">Top Rated</li>
-                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
-                            aria-selected="false" data-value="price-low-high">Price Low to High</li>
-                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
-                            aria-selected="false" data-value="price-high-low">Price High to Low</li>
-                    </ul>
-                </div>
-            </div>
-
-            <section class="mt-4">
-                <div id="product-list"
-                    class="grid grid-cols-2 justify-items-end gap-4 gap-y-8 lg:grid-cols-3 lg:gap-6 lg:gap-y-10">
-                    <!-- product card appended here -->
-                    <div class="product">
-                        <div class="relative group">
-                            <div
-                                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-10">
-                            </div>
-                            <button
-                                class="absolute top-3 right-4 text-white text-2xl opacity-100 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <div
-                                class="absolute bottom-6 right-0 left-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-                                <a href="/" class="bg-white text-black py-2 px-8 rounded-full">Quick Overview</a>
-                            </div>
-                            <img src="./assets/images/model/men1.jpg" alt="Product 1" class="w-full">
-                        </div>
-                        <h3 class="mt-4">Product 1</h3>
-                        <p>Description of Product 1</p>
-                        <p class="price">$29.99</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <script type="module" src="./js/productListing.js"></script>
 </body>
 
 </html>
