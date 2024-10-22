@@ -35,7 +35,7 @@
     }
 
     p {
-        @apply font-arial text-lg
+        @apply font-arial text-base md:text-lg
     }
 
     .max-container {
@@ -51,7 +51,7 @@
     }
 
     img {
-        @apply max-w-full;
+        @apply max-w-full object-cover;
     }
 
     .primary-cta {

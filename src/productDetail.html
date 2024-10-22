@@ -150,11 +150,11 @@
                     <i class="fa-solid fa-angle-right text-sm"></i>
                 </li>
                 <li class="flex items-center gap-2">
-                    <a href="/" class="text-sm">Jackets / Coats</a>
+                    <a href="/" class="text-sm text-nowrap">Jackets / Coats</a>
                     <i class="fa-solid fa-angle-right text-sm"></i>
                 </li>
                 <li>
-                    <a href="/" class="text-sm">Zip-Up Hoodies</a>
+                    <a href="/" class="text-sm text-nowrap">Zip-Up Hoodies</a>
                 </li>
             </ol>
         </nav>
@@ -162,57 +162,44 @@
 
     <main>
         <section>
-            <section>
-                <div class="max-container">
-                    <div class="flex flex-col">
-                        <div>
-                            <img id="main-image" alt="main image product"
-                                class="max-w-full w-[448px] h-[600px] object-cover">
+            <div class="max-container">
+                <div class="flex flex-col gap-4">
+                    <div class="lg:flex-1">
+                        <div class="flex gap-4 overflow-scroll">
+                            <img src="assets/images/menProducts/men3.jpg" alt="">
+                            <img src="assets/images/menProducts/men3-Zipup.png" alt="">
+                            <img src="assets/images/menProducts/men3-Zipup2.png" alt="">
+                            <img src="assets/images/menProducts/men3-Zipup3.png" alt="">
                         </div>
-                        <div id="thumbnail-area" class="flex mt-4"></div>
+                    </div>
+
+                    <div class="">
+                        <h3 class="mb-2"> Essential Zip-up Hoodie</h3>
+
+                        <div class="flex gap-2 items-center mb-10">
+                            <div class="">
+                                <i class="fa fa-star text-base"></i>
+                                <i class="fa fa-star text-base"></i>
+                                <i class="fa fa-star text-base"></i>
+                                <i class="fa fa-star text-base"></i>
+                                <i class="fa fa-star text-base"></i>
+                            </div>
+                            <p> 346 Reviews</p>
+                        </div>
+
+                        <div class="">
+                            <p class="color-title">Color : Brown </p>
+                            <a href="#"><img src="img/product_detail/color-swatch.jpeg" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
+
     </main>
 
     <script type="module" src="js/productDetail.js"></script>
-    <script>
-        const img_arr = [
-            "men3.jpg",
-            "men3-Zipup.png",
-            "men3-Zipup2.png",
-            "men3-Zipup3.png"
-        ]
 
-        const firstLoad = () => {
-            setThumbnails();
-            setMainImage(0);
-        }
-
-        const setMainImage = (index) => {
-            document.querySelector('#main-image').src = "./assets/images/menProducts/" + img_arr[index];
-            updateThumbnails(index);
-        }
-
-        const setThumbnails = () => {
-            img_arr.forEach((imgName, currentIndex) => {
-                const thumb = document.createElement("img");
-                thumb.src = "./assets/images/menProducts/" + img_arr[currentIndex];
-                thumb.className = "clickable w-[100px] h-[100px] object-cover mr-4 border";
-                thumb.addEventListener("click", () => {
-                    setMainImage(currentIndex);
-                })
-                document.querySelector('#thumbnail-area').appendChild(thumb);
-            });
-        }
-
-        const updateThumbnails = (current_index) => {
-        }
-
-        window.addEventListener('load', firstLoad)
-
-    </script>
 </body>
 
 </html>
