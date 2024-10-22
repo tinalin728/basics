@@ -1010,6 +1010,18 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1066,6 +1078,26 @@ img {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -1084,6 +1116,14 @@ img {
 
 .w-full {
   width: 100%;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-\[600px\] {
@@ -1205,6 +1245,10 @@ img {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1225,6 +1269,11 @@ img {
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1307,6 +1356,10 @@ img {
   padding: 1.25rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1383,6 +1436,10 @@ img {
   font-family: century-gothic, sans-serif;
 }
 
+.font-arial {
+  font-family: Arial, sans-serif;
+}
+
 .text-2xl {
   font-size: 22px;
   line-height: 29.26px;
@@ -1411,6 +1468,10 @@ img {
 .text-xl {
   font-size: 20px;
   line-height: 28px;
+}
+
+.text-\[12\.8px\] {
+  font-size: 12.8px;
 }
 
 .font-bold {
@@ -1472,8 +1533,20 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .decoration-solid {
   text-decoration-style: solid;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px;
 }
 
 .opacity-0 {
