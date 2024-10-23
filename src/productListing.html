@@ -224,7 +224,10 @@
 
             <!-- mobile filters -->
             <div class="flex justify-between items-center lg:hidden">
-                <div> <i class="fa-solid fa-sliders"></i></div>
+
+                <!-- open filter button -->
+                <button type="button" class="mobile-filter-toggle"> <i class="fa-solid fa-sliders"></i></button>
+
                 <div class="relative">
                     <div
                         class="w-[200px] js-options-toggle flex items-center justify-between gap-4 border py-1 px-4 rounded-full cursor-pointer">
@@ -233,7 +236,7 @@
                         </a>
                         <i class="js-option-icon fa fa-angle-down text-base"></i>
                     </div>
-                    <ul class="js-options-menu hidden w-full absolute left-0 top-full pl-4 bg-white shadow-md text-base cursor-pointer"
+                    <ul class="js-options-menu hidden z-40 w-full absolute left-0 top-full pl-4 bg-white shadow-md text-base cursor-pointer"
                         role="listbox" aria-labelledby="dropdown-label">
                         <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option" aria-selected="true"
                             data-value="recommended">All</li>
@@ -255,27 +258,32 @@
                 </div>
             </div>
 
-            <div class="absolute top-0 right-0 z-[101] w-[60vw] h-full bg-gray-500">
-                <h4>Refine your search</h4>
-                <div class="border-b border-gray-500 border-dotted py-2 cursor-pointer">
+            <!-- mobile filter menu -->
+            <div
+                class="mobile-filter-menu hidden absolute top-0 right-0 z-[101] w-full h-screen overflow-y-scroll bg-gray-500">
+                <div class="flex justify-between items-center p-4 bg-pink-100">
+                    <button type="button" class="close-filter-menu"><i class="fa-solid fa-x"></i></button>
+                    <h4>Refine your search</h4>
+                </div>
+                <div class="border-b border-gray-500 border-dotted p-4 cursor-pointer">
                     <div class="js-filter-expand flex items-center justify-between mb-2">
                         <span> Size </span>
                         <i class="js-filter-icon fa-solid fa-plus "></i>
                     </div>
                     <div class="js-filter-menu hidden">
-                        <div id="size-filter" class="flex flex-col gap-2">
+                        <div id="mobile-size-filter" class="flex flex-col gap-2 h-full">
                             <!-- size filter appended here -->
                         </div>
                     </div>
                 </div>
 
-                <div class="border-b border-gray-500 border-dotted py-2 cursor-pointer">
+                <div class="border-b border-gray-500 border-dotted p-4 cursor-pointer">
                     <div class="js-filter-expand flex items-center justify-between mb-2">
                         <span> Color </span>
                         <i class="js-filter-icon fa-solid fa-plus"></i>
                     </div>
                     <div class="js-filter-menu hidden">
-                        <div id="color-filter" class="flex flex-col gap-2">
+                        <div id="mobile-color-filter" class="flex flex-col gap-2 h-full">
                             <!-- color filter appended here -->
                         </div>
                     </div>

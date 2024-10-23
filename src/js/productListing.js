@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
         { filterOptType: 'sizes.numbers', containerId: '#size-filter' },
         { filterOptType: 'colors', containerId: '#color-filter' }
     ])
+    fetchFilterOptions('data/filters.json', [
+        { filterOptType: 'sizes.letters', containerId: '#mobile-size-filter' },
+        { filterOptType: 'sizes.numbers', containerId: '#mobile-size-filter' },
+        { filterOptType: 'colors', containerId: '#mobile-color-filter' }
+    ])
 
     fetchProductList('data/products.json', '#product-list', 'menProducts');
 
@@ -59,4 +64,20 @@ document.addEventListener("DOMContentLoaded", () => {
             filterMenuIcons[index].classList.toggle('fa-plus');
         });
     });
+})
+
+
+const toggleMobileFilter = document.querySelector('.mobile-filter-toggle')
+const mobileFilterMenu = document.querySelector('.mobile-filter-menu')
+const closeFilterMenu = document.querySelector('.close-filter-menu')
+
+toggleMobileFilter.addEventListener('click', () => {
+    mobileFilterMenu.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+})
+
+closeFilterMenu.addEventListener('click', () => {
+    mobileFilterMenu.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+
 })

@@ -32,9 +32,9 @@ export function fetchProductList(dataPath, containerId, productType) {
 
                 productCard.innerHTML = `
                  <div class="relative group cursor-pointer">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-10"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-1"></div>
 
-                     <button class="absolute top-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
+                     <button class="absolute top-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-2">
                         <i class="fas fa-heart text-3xl"></i>
                      </button>
 
