@@ -54,9 +54,7 @@
         @apply max-w-full object-cover;
     }
 
-    .primary-cta {
-        @apply px-8 py-4 bg-white text-dark-grey uppercase tracking-widest hover:bg-gold hover:text-white transition duration-300;
-    }
+
 }
 
 
@@ -95,7 +93,10 @@
         @apply relative z-10 max-w-[500px] h-[80vh] mx-auto flex flex-col justify-center items-center;
     }
 
-    /* home- about */
+    .primary-cta {
+        @apply px-6 py-3 bg-white text-dark-grey uppercase tracking-widest hover:bg-gold hover:text-white transition duration-300;
+    }
+
     .secondary-cta::after {
         content: "";
         position: absolute;

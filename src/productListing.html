@@ -156,7 +156,7 @@
 
     <div class="max-container flex gap-8">
         <!-- Sidebar -->
-        <aside class="hidden md:block w-[250px] sticky top-20 h-full pt-12">
+        <aside class="hidden md:block w-[200px] sticky top-20 h-full pt-12">
             <nav aria-label="Product Categories Navigation" class="mb-6">
                 <span class="text-sm font-light text-gold uppercase tracking-wide"> Categories </span>
                 <ul id="categories-list" class="mb-4">
@@ -195,9 +195,9 @@
 
         <!-- Main Content -->
         <main class="flex-1">
-            <div class="flex justify-between items-start">
-                <h3>Men's</h3>
-                <div class="relative z-50">
+            <div class="flex flex-col gap-2 md:flex-row md:justify-between md:items-start">
+                <h3 class="mb-2">Men's</h3>
+                <div class="relative z-50 hidden lg:block">
                     <div
                         class="w-[250px] js-options-toggle flex items-center justify-between border py-1 px-4 rounded-full cursor-pointer">
                         <a class="">
@@ -206,7 +206,7 @@
                         </a>
                         <i class="js-option-icon fa fa-angle-down text-base"></i>
                     </div>
-                    <ul class="js-options-menu hidden absolute right-0 top-full pl-4 w-[250px] bg-white shadow-md text-base cursor-pointer"
+                    <ul class="js-options-menu hidden absolute left-0 top-full pl-4 w-[250px] bg-white shadow-md text-base cursor-pointer"
                         role="listbox" aria-labelledby="dropdown-label">
                         <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option" aria-selected="true"
                             data-value="recommended">Recommended</li>
@@ -222,9 +222,71 @@
                 </div>
             </div>
 
+            <!-- mobile filters -->
+            <div class="flex justify-between items-center lg:hidden">
+                <div> <i class="fa-solid fa-sliders"></i></div>
+                <div class="relative">
+                    <div
+                        class="w-[200px] js-options-toggle flex items-center justify-between gap-4 border py-1 px-4 rounded-full cursor-pointer">
+                        <a class="">
+                            <span class="js-option-selected text-base">Categories</span>
+                        </a>
+                        <i class="js-option-icon fa fa-angle-down text-base"></i>
+                    </div>
+                    <ul class="js-options-menu hidden w-full absolute left-0 top-full pl-4 bg-white shadow-md text-base cursor-pointer"
+                        role="listbox" aria-labelledby="dropdown-label">
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option" aria-selected="true"
+                            data-value="recommended">All</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="newest">New Arrivals</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="top-rated">Tops</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="price-low-high">Bottoms</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="price-high-low">Jackets/ Coats</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="activewear">Activewear</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="eco-basics">EcoBasics</li>
+                        <li class="js-option p-2 hover:bg-light-beige hover:text-red" role="option"
+                            aria-selected="false" data-value="collaborations">All Collaborations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="absolute top-0 right-0 z-[101] w-[60vw] h-full bg-gray-500">
+                <h4>Refine your search</h4>
+                <div class="border-b border-gray-500 border-dotted py-2 cursor-pointer">
+                    <div class="js-filter-expand flex items-center justify-between mb-2">
+                        <span> Size </span>
+                        <i class="js-filter-icon fa-solid fa-plus "></i>
+                    </div>
+                    <div class="js-filter-menu hidden">
+                        <div id="size-filter" class="flex flex-col gap-2">
+                            <!-- size filter appended here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-b border-gray-500 border-dotted py-2 cursor-pointer">
+                    <div class="js-filter-expand flex items-center justify-between mb-2">
+                        <span> Color </span>
+                        <i class="js-filter-icon fa-solid fa-plus"></i>
+                    </div>
+                    <div class="js-filter-menu hidden">
+                        <div id="color-filter" class="flex flex-col gap-2">
+                            <!-- color filter appended here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- products -->
             <section class="mt-4">
                 <div id="product-list"
-                    class="grid grid-cols-2 justify-items-end gap-4 gap-y-8 lg:grid-cols-3 lg:gap-6 lg:gap-y-10">
+                    class="grid md:grid-cols-2 justify-items-end gap-4 gap-y-8 lg:grid-cols-3 lg:gap-6 lg:gap-y-10">
                     <!-- product card appended here -->
                     <div class="product">
                         <div class="relative group">

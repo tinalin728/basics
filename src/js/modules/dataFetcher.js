@@ -39,7 +39,7 @@ export function fetchProductList(dataPath, containerId, productType) {
                      </button>
 
                     <div class="absolute bottom-6 right-0 left-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-                        <a href="${product.link}" class="bg-gold text-white py-2 px-10 rounded-full">Quick Overview</a>
+                        <a href="${product.link}" class="bg-gold text-white rounded-full font-gothic px-8 py-2">Quick Overview</a>
                     </div>
                     <img src="${product.image}" alt="${product.alt}" class="w-full">
                 </div>

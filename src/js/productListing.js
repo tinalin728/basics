@@ -19,32 +19,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchProductList('data/products.json', '#product-list', 'menProducts');
 
+    const toggleOptions = document.querySelectorAll('.js-options-toggle');
 
+    toggleOptions.forEach((filterDropdown) => {
+        //the menu is placed after the toggle
+        const optionsMenu = filterDropdown.nextElementSibling;
+        const optionsArrow = filterDropdown.querySelector('.js-option-icon');
+        const options = optionsMenu.querySelectorAll('.js-option')
 
-    // sort by options menu
-    const toggleOptions = document.querySelector('.js-options-toggle');
-    const optionsMenu = document.querySelector('.js-options-menu');
-    const optionsArrow = document.querySelector('.js-option-icon');
-    const selectedOption = document.querySelectorAll('.js-option');
+        filterDropdown.addEventListener('click', () => {
+            optionsMenu.classList.toggle('hidden');
+            optionsArrow.classList.toggle('fa-angle-up');
+        })
 
-    toggleOptions.addEventListener('click', () => {
-        optionsMenu.classList.toggle('hidden');
-        optionsArrow.classList.toggle('fa-angle-up');
-    })
+        options.forEach((option) => {
+            option.addEventListener('click', () => {
+                filterDropdown.querySelector('.js-option-selected').textContent = option.textContent;
 
-    selectedOption.forEach((option) => {
-        option.addEventListener('click', () => {
-            toggleOptions.querySelector('.js-option-selected').textContent = option.textContent;
+                options.forEach((opt) => opt.setAttribute('aria-selected', 'false'));
+                option.setAttribute('aria-selected', 'true');
 
-            selectedOption.forEach((opt) => {
-                opt.setAttribute('aria-selected', 'false');
-            });
-
-            option.setAttribute('aria-selected', 'true');
-            optionsMenu.classList.add('hidden');
-            optionsArrow.classList.remove('fa-angle-up');
+                optionsMenu.classList.add('hidden');
+                optionsArrow.classList.remove('fa-angle-up')
+            })
         })
     })
+
+
 
     // side nav-filter
     const toggleFilters = document.querySelectorAll('.js-filter-expand');

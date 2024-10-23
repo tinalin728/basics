@@ -16,7 +16,7 @@ export function fetchAndRenderSlickData() {
             data.heroSlides.forEach(product => {
                 const heroContent = `
                 <div class="relative h-[80vh]">
-                    <img src="${product.image}" alt="${product.alt}" class="w-full object-cover" />
+                    <img src="${product.image}" alt="${product.alt}" class="w-full h-full object-cover" />
                     <div class="absolute inset-0 h-full flex flex-col items-center justify-center text-center text-white p-5 bg-black bg-opacity-30">
                         <h3 class="text-light-blue mb-2 italic font-medium">${product.tagline}</h3>
                         <h1> <span class="text-5xl md:text-6xl lg:text-7xl uppercase"> ${product.title}</span> <br>${product.subtitle}</h1>
