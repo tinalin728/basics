@@ -15,133 +15,27 @@
     <!-- Century Gothic Font -->
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- style -->
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/slick.css">
+
+
 </head>
 
 <body class="overflow-x-hidden">
-    <header class="font-gothic shadow-sm fixed bg-white w-full z-[100]">
-        <nav class="max-container py-6 flex justify-between items-center relative" aria-label="Main Navigation">
-            <div
-                class="js-hamburger-menu fixed z-50 top-0 left-0 bg-white h-screen w-[50vw] -translate-x-full transition-transform lg:relative lg:translate-x-0 lg:w-auto lg:h-auto">
-                <!-- close button -->
-                <button class="js-close-menu text-2xl float-right mt-6 mr-4"><i class="fa fa-x lg:hidden"></i></button>
 
-                <ul class="block mt-16 z-50 cursor-pointer lg:flex lg:items-center lg:justify-center lg:gap-12 lg:mt-0">
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="product_home.html">Men</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <!-- submenu -->
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-52">
-                                <li class="navbar_submenu">
-                                    <a href="#">New
-                                        Arrivals</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Best
-                                        Sellers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Tops</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Bottom</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+    <div class="js-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <my-header></my-header>
 
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="#">Women</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-52">
-                                <li class="navbar_submenu">
-                                    <a href="#">New
-                                        Arrivals</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Best
-                                        Sellers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Tops</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Bottom</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="#">Sales</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-52">
-                                <li class="navbar_submenu">
-                                    <a href="#">Men's Sales</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Women's Sales</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Limited-Time Offers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Basics. Clearance</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="border-b-[1px] lg:hidden">
-                        <div
-                            class="p-4 flex items-center justify-between bg-white hover:bg-light-beige transition duration-500 ease-in-out">
-                            <a href="#">My Account</a>
-                            <i class="fa fa-user text-xl text-gold"></i>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="flex gap-6 text-xl md:gap-10 lg:hidden">
-                <button class="js-toggle-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-
-            <a href="index.html" class="flex-grow flex justify-center lg:grow-0">
-                <img src="/src/assets/images/home/BasicsLogo.svg" alt="logo" width="120" class="lg:w-[150px]">
-            </a>
-
-            <ul class="flex justify-center items-center gap-6 md:gap-10 lg:gap-12 ">
-                <li class="hidden lg:block "><a href="#" class="hover:text-gold text-xl"><i
-                            class="fa fa-search"></i></a></li>
-                <li><a href="#" class="hover:text-gold"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#" class="hover:text-gold"><i class="fa fa-shopping-bag"></i></a></li>
-                <li class="hidden lg:block"><a href="#" class="hover:text-gold"><i class="fa fa-user"></i></a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
-
+    <!-- breadcrumb -->
     <div class="max-container pt-20 overflow-hidden">
         <nav aria-label="Breadcrumb" class="py-4">
             <ol class="flex items-center gap-2 text-gray-500">
@@ -161,187 +55,220 @@
     </div>
 
     <main class="overflow-x-hidden">
-        <div class="max-container">
-            <div class="flex flex-col gap-4">
-                <!-- images -->
-                <section>
-                    <div class="lg:flex-1">
-                        <div class="flex gap-4 overflow-scroll">
-                            <img src="assets/images/menProducts/men3.jpg" alt="">
-                            <img src="assets/images/menProducts/men3-Zipup.png" alt="">
-                            <img src="assets/images/menProducts/men3-Zipup2.png" alt="">
-                            <img src="assets/images/menProducts/men3-Zipup3.png" alt="">
+        <section>
+            <div class="max-container">
+                <div class="lg:flex lg:justify-between lg:gap-8">
+                    <!-- product images -->
+                    <div class="lg:basis-2/3 mb-2">
+                        <div class="flex gap-4 overflow-x-scroll lg:grid lg:grid-cols-2">
+                            <img src="assets/images/menProducts/men3.jpg" alt="default image">
+                            <img src="assets/images/menProducts/men3-Zipup.png" alt="close up">
+                            <img src="assets/images/menProducts/men3-Zipup2.png" alt="front">
+                            <img src="assets/images/menProducts/men3-Zipup3.png" alt="back">
                         </div>
                     </div>
-                </section>
 
-                <!-- product info -->
-                <section class="">
-                    <!-- product general info -->
-                    <div class="mb-4">
-                        <h3 class="mb-2"> Essential Zip-up Hoodie</h3>
+                    <!-- product info -->
+                    <div class="basis-1/3">
+                        <!-- product general info -->
+                        <div class="mb-4">
+                            <h3 class="mb-2"> Essential Zip-up Hoodie</h3>
 
-                        <div class="flex gap-2 items-center mb-10">
-                            <div class="">
-                                <i class="fa fa-star text-base"></i>
-                                <i class="fa fa-star text-base"></i>
-                                <i class="fa fa-star text-base"></i>
-                                <i class="fa fa-star text-base"></i>
-                                <i class="fa fa-star text-base"></i>
+                            <div class="flex gap-2 items-center mb-10">
+                                <div class="">
+                                    <i class="fa fa-star text-base"></i>
+                                    <i class="fa fa-star text-base"></i>
+                                    <i class="fa fa-star text-base"></i>
+                                    <i class="fa fa-star text-base"></i>
+                                    <i class="fa fa-star text-base"></i>
+                                </div>
+                                <p> 346 Reviews</p>
                             </div>
-                            <p> 346 Reviews</p>
-                        </div>
 
-                        <div class="mb-10">
-                            <p class="mb-2">Color : Brown </p>
+                            <div class="mb-10">
+                                <p class="mb-2">Color : Brown </p>
 
-                            <button type="button" aria-label="Select brown color"
-                                class="h-10 w-10 rounded-full p-1 border border-black"><img
-                                    src="assets/images/menProducts/men3-Zipup-color-swatch.jpeg" alt=""
-                                    class="rounded-full"></button>
-                        </div>
+                                <button type="button" aria-label="Select brown color"
+                                    class="h-10 w-10 rounded-full p-1 border border-black"><img
+                                        src="assets/images/menProducts/men3-Zipup-color-swatch.jpeg" alt=""
+                                        class="rounded-full"></button>
+                            </div>
 
-                        <div class="flex">
-                            <div class="flex justify-between items-center mb-2">
-                                <p class="size">Size : </p>
-                                <p class="size-guide"><a href="#">Size Guide</a></p>
+                            <div class="flex">
+                                <div class="flex justify-between items-center mb-2">
+                                    <p class="size">Size : </p>
+                                    <p class="size-guide"><a href="#">Size Guide</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex gap-2 mb-4">
-                            <div
-                                class="h-10 w-10 rounded-full p-1 border border-black flex justify-center items-center">
-                                <button type="button" class="text-xl"> S </button>
-                            </div>
-                            <div
-                                class="h-10 w-10 rounded-full p-1 border border-black flex justify-center items-center">
-                                <button type="button" class="text-xl"> M </button>
-                            </div>
-                            <div
-                                class="h-10 w-10 rounded-full p-1 border border-black flex justify-center items-center">
-                                <button type="button" class="text-xl"> L </button>
-                            </div>
-                        </div>
+                            <div class="flex gap-2 mb-4">
+                                <div
+                                    class="h-10 w-10 rounded-full border border-black flex justify-center items-center">
 
-                        <form action="" class="mb-4">
-                            <div class="mb-4">
-                                <div class="flex items-center font-arial">
-                                    <label for="ship-to-me">
-                                        <input type="radio" id="ship-to-me" value="ship" checked> Ship to me
+                                    <input type="radio" id="size-s" name="size" value="S" class="hidden peer/size-s">
+                                    <label for="size-s"
+                                        class="text-xl cursor-pointer w-full h-full flex justify-center items-center peer-checked/size-s:bg-black peer-checked/size-s:text-white peer-checked/size-s:border-black rounded-full transition-colors duration-300">
+                                        S
                                     </label>
                                 </div>
-                                <p class="text-gray-500 ml-4">Standard shipping 3-5 days</p>
-                            </div>
-
-                            <div>
-                                <div class="flex items-center font-arial">
-                                    <label for="pick-up">
-                                        <input type="radio" id="pick-up" value="pickup"> Pick up in store
+                                <div
+                                    class="h-10 w-10 rounded-full border border-black flex justify-center items-center">
+                                    <input type="radio" id="size-m" name="size" value="M" class="hidden peer/size-m">
+                                    <label for="size-m"
+                                        class="text-xl cursor-pointer w-full h-full flex justify-center items-center peer-checked/size-m:bg-black peer-checked/size-m:text-white peer-checked/size-m:border-black rounded-full transition-colors duration-300">
+                                        M
                                     </label>
                                 </div>
-                                <p class="text-gray-500 ml-4">Check <span class="hover:text-gold"><a href="/"
-                                            class="underline underline-offset-1">Nearby
-                                            Stores</a>
-                                    </span> for
-                                    available
-                                    sizes</p>
+                                <div
+                                    class="h-10 w-10 rounded-full border border-black flex justify-center items-center">
+                                    <input type="radio" id="size-l" name="size" value="L" class="hidden peer/size-l">
+                                    <label for="size-l"
+                                        class="text-xl cursor-pointer w-full h-full flex justify-center items-center peer-checked/size-l:bg-black peer-checked/size-l:text-white peer-checked/size-l:border-black rounded-full transition-colors duration-300">
+                                        L
+                                    </label>
+                                </div>
                             </div>
-                        </form>
 
-                        <div class="flex justify-between">
-                            <button type="button" class="primary-cta border border-black">Add to Cart</button>
-                            <button><i class="far fa-heart text-2xl"></i></button>
+
+
+                            <form action="" class="mb-4">
+                                <div class="mb-4">
+                                    <div class="flex items-center font-arial">
+                                        <label for="ship-to-me">
+                                            <input type="radio" id="ship-to-me" value="ship" checked> Ship to me
+                                        </label>
+                                    </div>
+                                    <p class="text-gray-500 ml-4">Standard shipping 3-5 days</p>
+                                </div>
+
+                                <div>
+                                    <div class="flex items-center font-arial">
+                                        <label for="pick-up">
+                                            <input type="radio" id="pick-up" value="pickup"> Pick up in store
+                                        </label>
+                                    </div>
+                                    <p class="text-gray-500 ml-4">Check <span class="hover:text-gold"><a href="/"
+                                                class="underline underline-offset-1">Nearby
+                                                Stores</a>
+                                        </span> for
+                                        available
+                                        sizes</p>
+                                </div>
+                            </form>
+
+                            <div class="flex justify-between">
+                                <button type="button" class="primary-cta border border-black">Add to Cart</button>
+                                <button><i class="far fa-heart text-3xl"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- product description -->
+                        <div class="flex flex-col gap-6">
+                            <div class="border-b border-dotted border-gray-500">
+                                <div class="dropdown-header flex justify-between py-2">
+                                    <h4 class="font-gothic font-bold">Description</h4>
+                                    <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
+                                </div>
+                                <div class="dropdown-detail hidden">
+                                    <p class="font-medium italic text-gold">Elevate your everyday with the EcoBasics.
+                                        essential
+                                        plain tee. 
+                                    </p>
+                                    <p class="">
+                                        Crafted from 100% organic cotton, our t-shirt offers softness and breathability.
+                                        Featuring a refined crew neck and subtle rib-knit detailing at the collar,
+                                        sleeves,
+                                        and
+                                        hem, this tee is as stylish as it is sustainable. The durable construction
+                                        ensures
+                                        it
+                                        maintains its shape and quality through countless wears and washes. The round,
+                                        clean
+                                        lines offer a versatile and flattering shape that complements any wardrobe. 
+                                    </p>
+                                    <p class="mb-2">
+                                        The EcoBasics line transcends mere wardrobe basics—it symbolizes your dedication
+                                        to
+                                        sustainable fashion. Embrace a garment that seamlessly blends superior comfort,
+                                        contemporary aesthetics, and ethical manufacturing, setting a benchmark for
+                                        eco-conscious apparel.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="border-b border-dotted border-gray-500">
+                                <div class="dropdown-header flex justify-between py-2">
+                                    <h4 class="font-gothic font-bold">Materials & Cares</h4>
+                                    <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
+                                </div>
+
+                                <div class="dropdown-detail hidden">
+                                    <p> Sustainable Fabric: Made from 100% organic cotton, grown without harmful
+                                        pesticides
+                                        or synthetic fertilizers, ensuring a soft and breathable fabric that's gentle on
+                                        your skin and the planet.</p>
+                                    <p class="mb-2">Ethical Production: Manufactured in fair-trade certified facilities,
+                                        ensuring fair
+                                        wages and safe working conditions for all workers involved. Minimalist Design:
+                                        Featuring a classic crew neck and relaxed fit, this tee offers timeless style
+                                        that
+                                        can be effortlessly paired with any outfit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="border-b border-dotted border-gray-500">
+                                <div class=" dropdown-header flex justify-between py-2">
+                                    <h4 class="font-gothic font-bold">Specifications</h4>
+                                    <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
+                                </div>
+                                <div class="dropdown-detail hidden">
+                                    <p>Material: 100% organic cotton</p>
+                                    <p>Available Color: Brown</p>
+                                    <p>Sizes: XS, S, M, L, XL, XXL</p>
+                                    <p class="mb-2">Care Instructions: Machine wash cold, tumble dry low</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- product description -->
-                    <div class="flex flex-col gap-6">
-                        <div class="border-b border-dotted border-gray-500">
-                            <div class="dropdown-header flex justify-between py-2">
-                                <h4 class="font-gothic font-bold">Description</h4>
-                                <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
-                            </div>
-                            <div class="dropdown-detail hidden">
-                                <p class="font-medium italic text-gold">Elevate your everyday with the EcoBasics.
-                                    essential
-                                    plain tee. 
-                                </p>
-                                <p class="">
-                                    Crafted from 100% organic cotton, our t-shirt offers softness and breathability.
-                                    Featuring a refined crew neck and subtle rib-knit detailing at the collar, sleeves,
-                                    and
-                                    hem, this tee is as stylish as it is sustainable. The durable construction ensures
-                                    it
-                                    maintains its shape and quality through countless wears and washes. The round, clean
-                                    lines offer a versatile and flattering shape that complements any wardrobe. 
-                                </p>
-                                <p class="mb-2">
-                                    The EcoBasics line transcends mere wardrobe basics—it symbolizes your dedication to
-                                    sustainable fashion. Embrace a garment that seamlessly blends superior comfort,
-                                    contemporary aesthetics, and ethical manufacturing, setting a benchmark for
-                                    eco-conscious apparel.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="border-b border-dotted border-gray-500">
-                            <div class="dropdown-header flex justify-between py-2">
-                                <h4 class="font-gothic font-bold">Materials & Cares</h4>
-                                <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
-                            </div>
-
-                            <div class="dropdown-detail hidden">
-                                <p> Sustainable Fabric: Made from 100% organic cotton, grown without harmful pesticides
-                                    or synthetic fertilizers, ensuring a soft and breathable fabric that's gentle on
-                                    your skin and the planet.</p>
-                                <p class="mb-2">Ethical Production: Manufactured in fair-trade certified facilities,
-                                    ensuring fair
-                                    wages and safe working conditions for all workers involved. Minimalist Design:
-                                    Featuring a classic crew neck and relaxed fit, this tee offers timeless style that
-                                    can be effortlessly paired with any outfit.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="border-b border-dotted border-gray-500">
-                            <div class=" dropdown-header flex justify-between py-2">
-                                <h4 class="font-gothic font-bold">Specifications</h4>
-                                <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
-                            </div>
-                            <div class="dropdown-detail hidden">
-                                <p>Material: 100% organic cotton</p>
-                                <p>Available Color: Brown</p>
-                                <p>Sizes: XS, S, M, L, XL, XXL</p>
-                                <p class="mb-2">Care Instructions: Machine wash cold, tumble dry low</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="featured-list">
-                    <div class="max-container relative">
-                        <h3>Similar Items</h3>
-                        <div class="flex gap-2 justify-end mb-4">
-                            <div
-                                class="arrow-prev text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 ">
-                                <i class="fa fa-arrow-left"></i>
-                            </div>
-                            <div
-                                class="arrow-nxt text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500">
-                                <span><i class="fa fa-thin fa-arrow-right"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="wrapper">
-                            <div id="featured-list-output">
-                                <!-- feature list appended here -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="featured-list">
+            <div class="max-container relative">
+                <h3 class="mb-4">Similar Items</h3>
+
+                <div class="wrapper">
+                    <div class="similar-product-list">
+                        <!-- feature list appended here -->
+                    </div>
+                </div>
+                <div
+                    class="arrow-prev text-xl  text-white bg-dark-grey bg-opacity-20 h-[40px] w-[40px] rounded-xl flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 absolute bottom-1/2 left-4">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+                <div
+                    class="arrow-nxt text-xl  text-white bg-dark-grey bg-opacity-20 h-[40px] w-[40px] rounded-xl flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 absolute bottom-1/2 right-6">
+                    <i class="fa fa-thin fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <my-footer></my-footer>
+
+    <!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/modules/HeaderFooterManager.js"></script>
     <script type="module" src="js/productDetail.js"></script>
 
 </body>

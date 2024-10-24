@@ -1,4 +1,4 @@
-export function DropdownWithPlus(toggleSelector, contentSelector, iconSelector) {
+export function dropdownWithPlus(toggleSelector, contentSelector, iconSelector) {
     const dropdowns = document.querySelectorAll(toggleSelector);
     const dropdownContent = document.querySelectorAll(contentSelector);
     const icon = document.querySelectorAll(iconSelector);

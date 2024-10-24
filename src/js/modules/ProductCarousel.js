@@ -2,20 +2,20 @@ import { productCard } from "./ProductCard.js";
 
 export function productCarousel(data, targetElement) {
     const productCarouselContainer = document.querySelector(targetElement);
-    productCarouselContainer.innerHTML = '';
+    //productCarouselContainer.innerHTML = '';
 
     data.forEach(product => {
         const cardHTML =
             `
                 <div class="pr-4 cursor-pointer">
-                    ${productCard(product)};
+                    ${productCard(product)}
                 </div>
             `
         productCarouselContainer.innerHTML += cardHTML;
     });
 
-
     $(productCarouselContainer).slick({
+
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: ".arrow-prev",
@@ -39,3 +39,4 @@ export function productCarousel(data, targetElement) {
     });
 
 }
+

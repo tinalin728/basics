@@ -23,127 +23,9 @@
 </head>
 
 <body>
-    <header class="font-gothic shadow-sm fixed bg-white w-full z-[100]">
-        <nav class="max-container py-6 flex justify-between items-center relative" aria-label="Main Navigation">
-            <div
-                class="js-hamburger-menu fixed z-50 top-0 left-0 bg-white h-screen w-[50vw] -translate-x-full transition-transform lg:relative lg:translate-x-0 lg:w-auto lg:h-auto">
-                <!-- close button -->
-                <button class="js-close-menu text-2xl float-right mt-6 mr-4"><i class="fa fa-x lg:hidden"></i></button>
+    <div class="js-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <my-header></my-header>
 
-                <ul class="block mt-16 z-50 cursor-pointer lg:flex lg:items-center lg:justify-center lg:gap-12 lg:mt-0">
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="product_home.html">Men</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <!-- submenu -->
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-52">
-                                <li class="navbar_submenu">
-                                    <a href="#">New
-                                        Arrivals</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Best
-                                        Sellers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Tops</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Bottom</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="#">Women</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-52">
-                                <li class="navbar_submenu">
-                                    <a href="#">New
-                                        Arrivals</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Best
-                                        Sellers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Tops</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Bottom</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="#">Sales</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-52">
-                                <li class="navbar_submenu">
-                                    <a href="#">Men's Sales</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Women's Sales</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Limited-Time Offers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Basics. Clearance</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="border-b-[1px] lg:hidden">
-                        <div
-                            class="p-4 flex items-center justify-between bg-white hover:bg-light-beige transition duration-500 ease-in-out">
-                            <a href="#">My Account</a>
-                            <i class="fa fa-user text-xl text-gold"></i>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="flex gap-6 text-xl md:gap-10 lg:hidden">
-                <button class="js-toggle-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-
-            <div class="flex-grow flex justify-center lg:grow-0">
-                <img src="/src/assets/images/home/BasicsLogo.svg" alt="logo" width="120" class="lg:w-[150px]">
-            </div>
-
-            <ul class="flex justify-center items-center gap-6 md:gap-10 lg:gap-12 ">
-                <li class="hidden lg:block "><a href="#" class="hover:text-gold text-xl"><i
-                            class="fa fa-search"></i></a></li>
-                <li><a href="#" class="hover:text-gold"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#" class="hover:text-gold"><i class="fa fa-shopping-bag"></i></a></li>
-                <li class="hidden lg:block"><a href="#" class="hover:text-gold"><i class="fa fa-user"></i></a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
     <div class="max-container pt-20">
         <nav aria-label="Breadcrumb" class="py-4">
             <ol class="flex">
@@ -155,7 +37,7 @@
     </div>
 
     <div class="max-container flex gap-8">
-        <!-- Sidebar -->
+        <!-- Desktop Sidebar -->
         <aside class="hidden md:block w-[200px] sticky top-20 h-full pt-12 overflow-y-scroll">
             <nav aria-label="Product Categories Navigation" class="mb-6">
                 <span class="text-sm font-light text-gold uppercase tracking-wide"> Categories </span>
@@ -222,7 +104,7 @@
                 </div>
             </div>
 
-            <!-- mobile filters -->
+            <!-- mobile sort by category -->
             <div class="flex justify-between items-center lg:hidden">
 
                 <!-- open filter button -->
@@ -296,7 +178,7 @@
                 <div id="product-list"
                     class="grid md:grid-cols-2 justify-items-end gap-4 gap-y-8 lg:grid-cols-3 lg:gap-6 lg:gap-y-10">
                     <!-- product card appended here -->
-                    <div class="product">
+                    <!-- <div class="product">
                         <div class="relative group">
                             <div
                                 class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-10">
@@ -314,15 +196,18 @@
                         <h3 class="mt-4">Product 1</h3>
                         <p>Description of Product 1</p>
                         <p class="price">$29.99</p>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </main>
     </div>
 
 
+    <my-footer></my-footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script src="./js/modules/HeaderFooterManager.js"></script>
     <script type="module" src="./js/menProductListing.js"></script>
 </body>
 

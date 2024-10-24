@@ -25,139 +25,18 @@
 
 
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/slick.css">
     <link rel="stylesheet" href="/src/css/animation.css">
 
 </head>
 
 <body class="overflow-x-hidden">
-    <div class="js-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
+    <div class="js-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
 
-    </div>
-    <header class="font-gothic shadow-sm">
-        <nav class="max-container py-6 flex justify-between items-center relative ">
-
-            <div
-                class="js-hamburger-menu fixed z-50 top-0 left-0 bg-white h-screen w-[50vw] -translate-x-full transition-transform lg:relative lg:translate-x-0 lg:w-auto lg:h-auto">
-                <!-- close button -->
-                <button class="js-close-menu text-2xl float-right mt-6 mr-4"><i class="fa fa-x lg:hidden"></i></button>
-
-                <ul class="block mt-16 z-50 cursor-pointer lg:flex lg:items-center lg:justify-center lg:gap-12 lg:mt-0">
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="product_home.html">Men</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <!-- submenu -->
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="lg:w-[150px]">
-                                <li class="navbar_submenu">
-                                    <a href="productListing.html">New
-                                        Arrivals</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Best
-                                        Sellers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Tops</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Bottom</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="#">Women</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="">
-                                <li class="navbar_submenu">
-                                    <a href="#">New
-                                        Arrivals</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Best
-                                        Sellers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Tops</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href=" #">Bottom</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="relative border-b-[1px] group lg:border-0">
-                        <div class="navbar_menu_wrapper">
-                            <a href="#">Sales</a>
-                            <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
-                            </span>
-                        </div>
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="">
-                                <li class="navbar_submenu">
-                                    <a href="#">Men's Sales</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Women's Sales</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Limited-Time Offers</a>
-                                </li>
-                                <li class="navbar_submenu">
-                                    <a href="#">Basics. Clearance</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="border-b-[1px] lg:hidden">
-                        <div
-                            class="p-4 flex items-center justify-between bg-white hover:bg-light-beige transition duration-500 ease-in-out">
-                            <a href="#">My Account</a>
-                            <i class="fa fa-user text-xl text-gold"></i>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="flex gap-6 text-xl md:gap-10 lg:hidden">
-                <button class="js-toggle-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-
-            <div class="flex-grow flex justify-center lg:grow-0">
-                <img src="/src/assets/images/home/BasicsLogo.svg" alt="logo" width="120" class="lg:w-[150px]">
-            </div>
-
-            <ul class="flex gap-6 md:gap-10 lg:gap-12">
-                <li class="hidden lg:block "><a href="#" class="hover:text-gold text-xl"><i
-                            class="fa fa-search"></i></a></li>
-                <li><a href="#" class="hover:text-gold text-xl"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#" class="hover:text-gold text-xl"><i class="fa fa-shopping-bag"></i></a></li>
-                <li class="hidden lg:block text-xl"><a href="#" class="hover:text-gold"><i class="fa fa-user"></i></a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
+    <my-header></my-header>
 
     <main>
-        <section class="hero h-[90vh] relative overflow-hidden">
+        <section class="hero h-[90vh] relative overflow-hidden mb-0">
             <div id="hero-slider-output" class="relative">
             </div>
             <!-- hero slider content appended here -->
@@ -171,25 +50,21 @@
 
         <section class="featured-list">
             <div class="max-container relative">
-                <h3>Latest Arrivals</h3>
-                <div class="flex gap-2 justify-end mb-4">
-                    <div
-                        class="arrow-prev text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 ">
-                        <i class="fa fa-arrow-left"></i>
-                    </div>
-                    <div
-                        class="arrow-nxt text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500">
-                        <span><i class="fa fa-thin fa-arrow-right"></i></span>
-                    </div>
-                </div>
-
+                <h3 class="mb-6">Latest Arrivals</h3>
                 <div class="wrapper">
                     <div id="arrivals-list">
                         <!-- feature list appended here -->
                     </div>
                 </div>
 
-
+                <div
+                    class="arrow-prev text-xl  text-white bg-dark-grey bg-opacity-20 h-[40px] w-[40px] rounded-xl flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 absolute bottom-1/2 left-4">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+                <div
+                    class="arrow-nxt text-xl  text-white bg-dark-grey bg-opacity-20 h-[40px] w-[40px] rounded-xl flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 absolute bottom-1/2 right-6">
+                    <i class="fa fa-thin fa-arrow-right"></i>
+                </div>
             </div>
         </section>
 
@@ -241,47 +116,7 @@
         </section>
     </main>
 
-    <footer class="bg-dark-grey">
-        <div class="max-container  py-12 md:py-14 lg:py-16">
-            <div class="flex flex-col gap-8 justify-between lg:flex-row">
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-light-grey">Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input class="p-2" type="email" placeholder="Enter your email" required>
-                        <button class="primary-cta  py-2" type="submit">Submit</button>
-                    </form>
-                    <div class="text-white flex gap-4 ">
-                        <a href="#" class="text-xl hover:text-gold transition duration-300"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-xl hover:text-gold transition duration-300"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-xl hover:text-gold transition duration-300"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-xl hover:text-gold transition duration-300"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-light-grey">Basics.</h3>
-                    <ul class="text-white flex flex-col gap-2">
-                        <li class="hover:text-gold transition duration-300"><a href=" about.html">About Us</a></li>
-                        <li class="hover:text-gold transition duration-300"><a href="#">Contact Us</a></li>
-                        <li class="hover:text-gold transition duration-300"><a href="#">Terms of Service</a></li>
-                        <li class="hover:text-gold transition duration-300"><a href="#">Cookies Used</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-light-grey">Support</h3>
-                    <ul class="text-white flex flex-col gap-2">
-                        <li class="hover:text-gold transition duration-300"><a href="#">FAQ</a></li>
-                        <li class="hover:text-gold transition duration-300"><a href="#">Help Center</a></li>
-                        <li class="hover:text-gold transition duration-300"><a href="#">Privacy Policy</a></li>
-                        <li class="hover:text-gold transition duration-300"><a href="#">Report a Problem</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <my-footer></my-footer>
 
     <!-- jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -293,6 +128,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
         integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/modules/HeaderFooterManager.js"></script>
 
     <script type="module" src="/src/js/index.js"></script>
 

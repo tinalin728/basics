@@ -681,6 +681,7 @@ section {
 }
 
 img {
+  height: 100%;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -883,6 +884,10 @@ img {
   bottom: 0px;
 }
 
+.bottom-1\/2 {
+  bottom: 50%;
+}
+
 .bottom-6 {
   bottom: 1.5rem;
 }
@@ -895,6 +900,10 @@ img {
   left: 0.25rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -905,6 +914,10 @@ img {
 
 .right-4 {
   right: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
 }
 
 .top-0 {
@@ -945,10 +958,6 @@ img {
 
 .z-50 {
   z-index: 50;
-}
-
-.z-\[100\] {
-  z-index: 100;
 }
 
 .z-\[101\] {
@@ -1052,6 +1061,10 @@ img {
   height: 300px;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
@@ -1092,6 +1105,10 @@ img {
   width: 250px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -1114,6 +1131,10 @@ img {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.basis-1\/3 {
+  flex-basis: 33.333333%;
 }
 
 .-translate-x-full {
@@ -1149,10 +1170,6 @@ img {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1191,12 +1208,12 @@ img {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .overflow-y-scroll {
@@ -1539,6 +1556,12 @@ img {
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1625,6 +1648,51 @@ img {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.peer\/size-l:checked ~ .peer-checked\/size-l\:border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.peer\/size-m:checked ~ .peer-checked\/size-m\:border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.peer\/size-s:checked ~ .peer-checked\/size-s\:border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.peer\/size-l:checked ~ .peer-checked\/size-l\:bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.peer\/size-m:checked ~ .peer-checked\/size-m\:bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.peer\/size-s:checked ~ .peer-checked\/size-s\:bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.peer\/size-l:checked ~ .peer-checked\/size-l\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.peer\/size-m:checked ~ .peer-checked\/size-m\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.peer\/size-s:checked ~ .peer-checked\/size-s\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1736,16 +1804,16 @@ img {
     display: flex;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
   }
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:w-52 {
-    width: 13rem;
   }
 
   .lg\:w-\[150px\] {
@@ -1756,17 +1824,21 @@ img {
     width: auto;
   }
 
-  .lg\:flex-1 {
-    flex: 1 1 0%;
-  }
-
   .lg\:grow-0 {
     flex-grow: 0;
+  }
+
+  .lg\:basis-2\/3 {
+    flex-basis: 66.666667%;
   }
 
   .lg\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
@@ -1783,6 +1855,10 @@ img {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-10 {

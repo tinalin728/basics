@@ -1,10 +1,12 @@
 import { MobileNavbar } from './modules/MobileNavbar.js';
 import { fetchProductList } from "./modules/FetchProductList.js"
 import { fetchFilterOptions, fetchFilterCategory } from "./modules/FetchFilter.js"
-import { DropdownWithPlus } from "./modules/DropdownWithPlus.js";
+import { dropdownWithPlus } from "./modules/DropdownWithPlus.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     MobileNavbar();
+
+    // filters
     fetchFilterCategory('data/filters.json',
         [
             { filterCatType: 'categories', containerId: '#categories-list' },
@@ -23,12 +25,30 @@ document.addEventListener("DOMContentLoaded", () => {
         { filterOptType: 'colors', containerId: '#mobile-color-filter' }
     ])
 
+    // product listing
     fetchProductList('data/products.json', '#product-list', 'menProducts');
 
-    DropdownWithPlus('.js-filter-expand', '.js-filter-menu', '.js-filter-icon');
 
+    dropdownWithPlus('.js-filter-expand', '.js-filter-menu', '.js-filter-icon');
+
+    // Mobile filter dropdown
+    const toggleMobileFilter = document.querySelector('.mobile-filter-toggle')
+    const mobileFilterMenu = document.querySelector('.mobile-filter-menu')
+    const closeFilterMenu = document.querySelector('.close-filter-menu')
+
+    toggleMobileFilter.addEventListener('click', () => {
+        mobileFilterMenu.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+    })
+
+    closeFilterMenu.addEventListener('click', () => {
+        mobileFilterMenu.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+
+    })
+
+    //Sort dropdown with arrow icon
     const toggleOptions = document.querySelectorAll('.js-options-toggle');
-
     toggleOptions.forEach((filterDropdown) => {
         //the menu is placed after the toggle
         const optionsMenu = filterDropdown.nextElementSibling;
@@ -51,21 +71,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 optionsArrow.classList.remove('fa-angle-up')
             })
         })
-    })
-})
-
-
-const toggleMobileFilter = document.querySelector('.mobile-filter-toggle')
-const mobileFilterMenu = document.querySelector('.mobile-filter-menu')
-const closeFilterMenu = document.querySelector('.close-filter-menu')
-
-toggleMobileFilter.addEventListener('click', () => {
-    mobileFilterMenu.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
-})
-
-closeFilterMenu.addEventListener('click', () => {
-    mobileFilterMenu.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
-
+    });
 })

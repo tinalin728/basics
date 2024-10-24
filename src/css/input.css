@@ -51,10 +51,12 @@
     }
 
     img {
-        @apply max-w-full object-cover;
+        @apply max-w-full h-full object-cover;
     }
 
-
+    .slick-track {
+        margin-left: 0;
+    }
 }
 
 

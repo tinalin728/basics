@@ -13,6 +13,7 @@ export function productCard(product) {
 
                     <img src="${product.image}" alt="${product.alt}" class="w-full">
                 </div>
+                
                 <a href="${product.link}" class="cursor-pointer">
                     <h4 class="my-2 hover:text-gray-600">${product.name}</h4>
                     <p class="price">${product.price}</p>
