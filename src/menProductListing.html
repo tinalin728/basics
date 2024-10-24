@@ -156,7 +156,7 @@
 
     <div class="max-container flex gap-8">
         <!-- Sidebar -->
-        <aside class="hidden md:block w-[200px] sticky top-20 h-full pt-12">
+        <aside class="hidden md:block w-[200px] sticky top-20 h-full pt-12 overflow-y-scroll">
             <nav aria-label="Product Categories Navigation" class="mb-6">
                 <span class="text-sm font-light text-gold uppercase tracking-wide"> Categories </span>
                 <ul id="categories-list" class="mb-4">
@@ -260,10 +260,10 @@
 
             <!-- mobile filter menu -->
             <div
-                class="mobile-filter-menu hidden absolute top-0 right-0 z-[101] w-full h-screen overflow-y-scroll bg-gray-500">
-                <div class="flex justify-between items-center p-4 bg-pink-100">
-                    <button type="button" class="close-filter-menu"><i class="fa-solid fa-x"></i></button>
+                class="mobile-filter-menu hidden absolute top-0 right-0 z-[101] w-full h-screen overflow-y-scroll bg-white">
+                <div class="flex justify-between items-center px-4 py-6 bg-light-beige">
                     <h4>Refine your search</h4>
+                    <button type="button" class="close-filter-menu"><i class="fa-solid fa-x"></i></button>
                 </div>
                 <div class="border-b border-gray-500 border-dotted p-4 cursor-pointer">
                     <div class="js-filter-expand flex items-center justify-between mb-2">
@@ -323,7 +323,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script type="module" src="./js/productListing.js"></script>
+    <script type="module" src="./js/menProductListing.js"></script>
 </body>
 
 </html>

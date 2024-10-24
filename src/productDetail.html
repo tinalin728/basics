@@ -19,7 +19,7 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header class="font-gothic shadow-sm fixed bg-white w-full z-[100]">
         <nav class="max-container py-6 flex justify-between items-center relative" aria-label="Main Navigation">
             <div
@@ -142,7 +142,7 @@
         </nav>
     </header>
 
-    <div class="max-container pt-20">
+    <div class="max-container pt-20 overflow-hidden">
         <nav aria-label="Breadcrumb" class="py-4">
             <ol class="flex items-center gap-2 text-gray-500">
                 <li class="flex items-center gap-2">
@@ -154,16 +154,17 @@
                     <i class="fa-solid fa-angle-right text-sm"></i>
                 </li>
                 <li>
-                    <a href="/" class="text-sm text-nowrap">Zip-Up Hoodies</a>
+                    <a href="/" class="text-sm">Zip-Up Hoodies</a>
                 </li>
             </ol>
         </nav>
     </div>
 
-    <main>
-        <section>
-            <div class="max-container">
-                <div class="flex flex-col gap-4">
+    <main class="overflow-x-hidden">
+        <div class="max-container">
+            <div class="flex flex-col gap-4">
+                <!-- images -->
+                <section>
                     <div class="lg:flex-1">
                         <div class="flex gap-4 overflow-scroll">
                             <img src="assets/images/menProducts/men3.jpg" alt="">
@@ -172,8 +173,12 @@
                             <img src="assets/images/menProducts/men3-Zipup3.png" alt="">
                         </div>
                     </div>
+                </section>
 
-                    <div class="">
+                <!-- product info -->
+                <section class="">
+                    <!-- product general info -->
+                    <div class="mb-4">
                         <h3 class="mb-2"> Essential Zip-up Hoodie</h3>
 
                         <div class="flex gap-2 items-center mb-10">
@@ -247,10 +252,94 @@
                             <button><i class="far fa-heart text-2xl"></i></button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
+                    <!-- product description -->
+                    <div class="flex flex-col gap-6">
+                        <div class="border-b border-dotted border-gray-500">
+                            <div class="dropdown-header flex justify-between py-2">
+                                <h4 class="font-gothic font-bold">Description</h4>
+                                <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="dropdown-detail hidden">
+                                <p class="font-medium italic text-gold">Elevate your everyday with the EcoBasics.
+                                    essential
+                                    plain tee. 
+                                </p>
+                                <p class="">
+                                    Crafted from 100% organic cotton, our t-shirt offers softness and breathability.
+                                    Featuring a refined crew neck and subtle rib-knit detailing at the collar, sleeves,
+                                    and
+                                    hem, this tee is as stylish as it is sustainable. The durable construction ensures
+                                    it
+                                    maintains its shape and quality through countless wears and washes. The round, clean
+                                    lines offer a versatile and flattering shape that complements any wardrobe. 
+                                </p>
+                                <p class="mb-2">
+                                    The EcoBasics line transcends mere wardrobe basics—it symbolizes your dedication to
+                                    sustainable fashion. Embrace a garment that seamlessly blends superior comfort,
+                                    contemporary aesthetics, and ethical manufacturing, setting a benchmark for
+                                    eco-conscious apparel.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-dotted border-gray-500">
+                            <div class="dropdown-header flex justify-between py-2">
+                                <h4 class="font-gothic font-bold">Materials & Cares</h4>
+                                <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
+                            </div>
+
+                            <div class="dropdown-detail hidden">
+                                <p> Sustainable Fabric: Made from 100% organic cotton, grown without harmful pesticides
+                                    or synthetic fertilizers, ensuring a soft and breathable fabric that's gentle on
+                                    your skin and the planet.</p>
+                                <p class="mb-2">Ethical Production: Manufactured in fair-trade certified facilities,
+                                    ensuring fair
+                                    wages and safe working conditions for all workers involved. Minimalist Design:
+                                    Featuring a classic crew neck and relaxed fit, this tee offers timeless style that
+                                    can be effortlessly paired with any outfit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-dotted border-gray-500">
+                            <div class=" dropdown-header flex justify-between py-2">
+                                <h4 class="font-gothic font-bold">Specifications</h4>
+                                <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="dropdown-detail hidden">
+                                <p>Material: 100% organic cotton</p>
+                                <p>Available Color: Brown</p>
+                                <p>Sizes: XS, S, M, L, XL, XXL</p>
+                                <p class="mb-2">Care Instructions: Machine wash cold, tumble dry low</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="featured-list">
+                    <div class="max-container relative">
+                        <h3>Similar Items</h3>
+                        <div class="flex gap-2 justify-end mb-4">
+                            <div
+                                class="arrow-prev text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500 ">
+                                <i class="fa fa-arrow-left"></i>
+                            </div>
+                            <div
+                                class="arrow-nxt text-xl  text-white bg-dark-grey bg-opacity-20 h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 hover:shadow-xl transform duration-500">
+                                <span><i class="fa fa-thin fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="wrapper">
+                            <div id="featured-list-output">
+                                <!-- feature list appended here -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
     <script type="module" src="js/productDetail.js"></script>

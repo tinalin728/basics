@@ -1,9 +1,10 @@
-import { setupHamburgerMenu } from "./modules/menu.js";
-import { fetchProductList } from "./modules/dataFetcher.js"
-import { fetchFilterOptions, fetchFilterCategory } from "./modules/filter.js"
+import { MobileNavbar } from './modules/MobileNavbar.js';
+import { fetchProductList } from "./modules/FetchProductList.js"
+import { fetchFilterOptions, fetchFilterCategory } from "./modules/FetchFilter.js"
+import { DropdownWithPlus } from "./modules/DropdownWithPlus.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    setupHamburgerMenu();
+    MobileNavbar();
     fetchFilterCategory('data/filters.json',
         [
             { filterCatType: 'categories', containerId: '#categories-list' },
@@ -23,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ])
 
     fetchProductList('data/products.json', '#product-list', 'menProducts');
+
+    DropdownWithPlus('.js-filter-expand', '.js-filter-menu', '.js-filter-icon');
 
     const toggleOptions = document.querySelectorAll('.js-options-toggle');
 
@@ -49,21 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     })
-
-
-
-    // side nav-filter
-    const toggleFilters = document.querySelectorAll('.js-filter-expand');
-    const filterMenus = document.querySelectorAll('.js-filter-menu');
-    const filterMenuIcons = document.querySelectorAll('.js-filter-icon');
-
-    toggleFilters.forEach((toggleFilter, index) => {
-        toggleFilter.addEventListener('click', () => {
-            filterMenus[index].classList.toggle('hidden');
-            filterMenuIcons[index].classList.toggle('fa-minus');
-            filterMenuIcons[index].classList.toggle('fa-plus');
-        });
-    });
 })
 
 

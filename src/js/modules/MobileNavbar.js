@@ -1,6 +1,6 @@
 // Header Nav
 
-export function setupHamburgerMenu() {
+export function MobileNavbar() {
 
     const menu = document.querySelector(".js-hamburger-menu");
     const overlay = document.querySelector(".js-overlay");

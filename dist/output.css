@@ -955,10 +955,6 @@ img {
   z-index: 101;
 }
 
-.z-\[102\] {
-  z-index: 102;
-}
-
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -1265,11 +1261,6 @@ img {
   background-color: rgb(179 158 115 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
 .bg-light-beige {
   --tw-bg-opacity: 1;
   background-color: rgb(250 243 235 / var(--tw-bg-opacity));
@@ -1278,11 +1269,6 @@ img {
 .bg-light-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(222 231 237 / var(--tw-bg-opacity));
-}
-
-.bg-pink-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
 }
 
 .bg-white {
