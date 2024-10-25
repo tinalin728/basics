@@ -1,11 +1,11 @@
 
-import { MobileNavbar } from './modules/MobileNavbar.js';
-import { productCarousel } from './modules/ProductCarousel.js';
-import { fetchFeatureCard } from './modules/FetchFeaturedCard.js';
+import { mobileNavbar } from './modules/mobileNavbar.js';
+import { productCarousel } from './modules/productCarousel.js';
+import { fetchFeatureCard } from './modules/fetchFeaturedCard.js';
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    MobileNavbar();
+    mobileNavbar();
 
     fetchFeatureCard('data/products.json', '#featured-category-output', 'featuredCategories');
 

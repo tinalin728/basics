@@ -6,7 +6,7 @@ module.exports = {
       // [size, leading (line-height)]
       xs: ['12px', '16px'],
       sm: ['14px', '20px'],
-      base: ['16px', '19.5px'],
+      base: ['16px', '24px'],
       lg: ['18px', '24px'],
       xl: ['20px', '28px'],
       '2xl': ['22px', '29.26px'],

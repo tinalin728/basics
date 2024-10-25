@@ -36,7 +36,7 @@
     <my-header></my-header>
 
     <!-- breadcrumb -->
-    <div class="max-container pt-20 overflow-hidden">
+    <div class="max-container pt-10 overflow-hidden">
         <nav aria-label="Breadcrumb" class="py-4">
             <ol class="flex items-center gap-2 text-gray-500">
                 <li class="flex items-center gap-2">
@@ -74,7 +74,7 @@
                         <div class="mb-4">
                             <h3 class="mb-2"> Essential Zip-up Hoodie</h3>
 
-                            <div class="flex gap-2 items-center mb-10">
+                            <div class="flex gap-2 items-center mb-2">
                                 <div class="">
                                     <i class="fa fa-star text-base"></i>
                                     <i class="fa fa-star text-base"></i>
@@ -85,49 +85,63 @@
                                 <p> 346 Reviews</p>
                             </div>
 
-                            <div class="mb-10">
+                            <span class="block h-[0.25px] w-full bg-gray-500 mb-2"></span>
+
+                            <div class="my-8">
+                                <p>$ 60.99</p>
+                            </div>
+
+                            <!-- color -->
+                            <div class="my-8">
                                 <p class="mb-2">Color : Brown </p>
 
-                                <button type="button" aria-label="Select brown color"
-                                    class="h-10 w-10 rounded-full p-1 border border-black"><img
-                                        src="assets/images/menProducts/men3-Zipup-color-swatch.jpeg" alt=""
-                                        class="rounded-full"></button>
-                            </div>
+                                <div class="h-10 w-10 rounded-full">
+                                    <input type="radio" id="color-brown" name="color" value="brown"
+                                        class="hidden peer/color-brown">
 
-                            <div class="flex">
-                                <div class="flex justify-between items-center mb-2">
-                                    <p class="size">Size : </p>
-                                    <p class="size-guide"><a href="#">Size Guide</a></p>
-                                </div>
-                            </div>
-                            <div class="flex gap-2 mb-4">
-                                <div
-                                    class="h-10 w-10 rounded-full border border-black flex justify-center items-center">
+                                    <label for="color-brown"
+                                        class="w-full h-full p-1 border flex justify-center items-center border-light-grey peer-checked/color-brown:border-gold peer-checked/color-brown:border-2 rounded-full transition-colors duration-200 cursor-pointer">
 
-                                    <input type="radio" id="size-s" name="size" value="S" class="hidden peer/size-s">
-                                    <label for="size-s"
-                                        class="text-xl cursor-pointer w-full h-full flex justify-center items-center peer-checked/size-s:bg-black peer-checked/size-s:text-white peer-checked/size-s:border-black rounded-full transition-colors duration-300">
-                                        S
-                                    </label>
-                                </div>
-                                <div
-                                    class="h-10 w-10 rounded-full border border-black flex justify-center items-center">
-                                    <input type="radio" id="size-m" name="size" value="M" class="hidden peer/size-m">
-                                    <label for="size-m"
-                                        class="text-xl cursor-pointer w-full h-full flex justify-center items-center peer-checked/size-m:bg-black peer-checked/size-m:text-white peer-checked/size-m:border-black rounded-full transition-colors duration-300">
-                                        M
-                                    </label>
-                                </div>
-                                <div
-                                    class="h-10 w-10 rounded-full border border-black flex justify-center items-center">
-                                    <input type="radio" id="size-l" name="size" value="L" class="hidden peer/size-l">
-                                    <label for="size-l"
-                                        class="text-xl cursor-pointer w-full h-full flex justify-center items-center peer-checked/size-l:bg-black peer-checked/size-l:text-white peer-checked/size-l:border-black rounded-full transition-colors duration-300">
-                                        L
+                                        <img src="assets/images/menProducts/men3-Zipup-color-swatch.jpeg" alt=""
+                                            class="rounded-full">
                                     </label>
                                 </div>
                             </div>
 
+                            <!-- size -->
+                            <div class="my-8">
+                                <div class="flex justify-between items-center">
+                                    <p class="mb-2">Size : </p>
+                                    <a href="#" class="underline text-gray-700">Size Guide</a>
+                                </div>
+
+                                <div class="flex gap-2">
+                                    <div class="h-10 w-10 ">
+                                        <input type="radio" id="size-s" name="size" value="S"
+                                            class="hidden peer/size-s">
+                                        <label for="size-s"
+                                            class="text-xl cursor-pointer w-full h-full flex justify-center items-center border border-light-grey peer-checked/size-s:border-gold peer-checked/size-s:border-2 rounded-full transition-colors duration-200">
+                                            S
+                                        </label>
+                                    </div>
+                                    <div class="h-10 w-10 rounded-full flex justify-center items-center">
+                                        <input type="radio" id="size-m" name="size" value="M"
+                                            class="hidden peer/size-m">
+                                        <label for="size-m"
+                                            class="text-xl cursor-pointer w-full h-full flex justify-center items-center border border-light-grey  peer-checked/size-m:border-gold peer-checked/size-m:border-2 rounded-full transition-colors duration-200">
+                                            M
+                                        </label>
+                                    </div>
+                                    <div class="h-10 w-10 rounded-full flex justify-center items-center">
+                                        <input type="radio" id="size-l" name="size" value="L"
+                                            class="hidden peer/size-l">
+                                        <label for="size-l"
+                                            class="text-xl cursor-pointer w-full h-full flex justify-center items-center border border-light-grey peer-checked/size-l:border-gold peer-checked/size-l:border-2 rounded-full transition-colors duration-200">
+                                            L
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
 
 
                             <form action="" class="mb-4">
@@ -137,7 +151,7 @@
                                             <input type="radio" id="ship-to-me" value="ship" checked> Ship to me
                                         </label>
                                     </div>
-                                    <p class="text-gray-500 ml-4">Standard shipping 3-5 days</p>
+                                    <p class="text-gray-500 ml-4 text-base">Standard shipping 3-5 days</p>
                                 </div>
 
                                 <div>
@@ -146,8 +160,8 @@
                                             <input type="radio" id="pick-up" value="pickup"> Pick up in store
                                         </label>
                                     </div>
-                                    <p class="text-gray-500 ml-4">Check <span class="hover:text-gold"><a href="/"
-                                                class="underline underline-offset-1">Nearby
+                                    <p class="text-gray-500 ml-4 text-base">Check <span class="hover:text-gold"><a
+                                                href="/" class="underline underline-offset-1">Nearby
                                                 Stores</a>
                                         </span> for
                                         available
@@ -155,37 +169,35 @@
                                 </div>
                             </form>
 
-                            <div class="flex justify-between">
-                                <button type="button" class="primary-cta border border-black">Add to Cart</button>
-                                <button><i class="far fa-heart text-3xl"></i></button>
+                            <div class="flex justify-between gap-8">
+                                <button type="button"
+                                    class="w-full bg-white text-dark-grey uppercase tracking-widest hover:bg-gold hover:text-white transition duration-300 border border-black">Add
+                                    to Cart</button>
+                                <button class="py-2 px-3 border border-black"><i
+                                        class="far fa-heart text-3xl"></i></button>
                             </div>
                         </div>
 
                         <!-- product description -->
-                        <div class="flex flex-col gap-6">
-                            <div class="border-b border-dotted border-gray-500">
+                        <div class="flex flex-col">
+                            <div class="border-b border-dotted border-gray-500 py-4">
                                 <div class="dropdown-header flex justify-between py-2">
                                     <h4 class="font-gothic font-bold">Description</h4>
                                     <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
                                 </div>
-                                <div class="dropdown-detail hidden">
-                                    <p class="font-medium italic text-gold">Elevate your everyday with the EcoBasics.
-                                        essential
-                                        plain tee. 
+                                <div class="dropdown-detail bg-light-beige p-6 rounded-md hidden">
+                                    <p class="font-medium italic text-center text-gray-600 mb-2">Elevate your everyday
+                                        with the EcoBasics. essential plain tee. 
                                     </p>
-                                    <p class="">
+                                    <p class="mb-2 text-base">
                                         Crafted from 100% organic cotton, our t-shirt offers softness and breathability.
                                         Featuring a refined crew neck and subtle rib-knit detailing at the collar,
-                                        sleeves,
-                                        and
-                                        hem, this tee is as stylish as it is sustainable. The durable construction
-                                        ensures
-                                        it
-                                        maintains its shape and quality through countless wears and washes. The round,
-                                        clean
-                                        lines offer a versatile and flattering shape that complements any wardrobe. 
+                                        sleeves, and hem, this tee is as stylish as it is sustainable. The durable
+                                        construction ensures it maintains its shape and quality through countless wears
+                                        and washes. The round, clean lines offer a versatile and flattering shape that
+                                        complements any wardrobe. 
                                     </p>
-                                    <p class="mb-2">
+                                    <p class="mb-2 text-base">
                                         The EcoBasics line transcends mere wardrobe basics—it symbolizes your dedication
                                         to
                                         sustainable fashion. Embrace a garment that seamlessly blends superior comfort,
@@ -195,37 +207,43 @@
                                 </div>
                             </div>
 
-                            <div class="border-b border-dotted border-gray-500">
+                            <div class="border-b border-dotted border-gray-500 py-4">
                                 <div class="dropdown-header flex justify-between py-2">
                                     <h4 class="font-gothic font-bold">Materials & Cares</h4>
                                     <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
                                 </div>
 
-                                <div class="dropdown-detail hidden">
-                                    <p> Sustainable Fabric: Made from 100% organic cotton, grown without harmful
-                                        pesticides
-                                        or synthetic fertilizers, ensuring a soft and breathable fabric that's gentle on
-                                        your skin and the planet.</p>
-                                    <p class="mb-2">Ethical Production: Manufactured in fair-trade certified facilities,
-                                        ensuring fair
-                                        wages and safe working conditions for all workers involved. Minimalist Design:
-                                        Featuring a classic crew neck and relaxed fit, this tee offers timeless style
-                                        that
-                                        can be effortlessly paired with any outfit.
+                                <div class="dropdown-detail bg-light-beige p-6 rounded-md hidden">
+                                    <p class="mb-2 text-base"> <span class="font-bold">Sustainable Fabric: </span>Made
+                                        from 100% organic
+                                        cotton, grown
+                                        without
+                                        harmful pesticides or synthetic fertilizers, ensuring a soft and breathable
+                                        fabric that's gentle on your skin and the planet.</p>
+
+                                    <p class="mb-2 text-base"> <span class="font-bold">Ethical Production:
+                                        </span>Manufactured in
+                                        fair-trade certified
+                                        facilities,
+                                        ensuring fair wages and safe working conditions for all workers involved.
+                                        Minimalist Design: Featuring a classic crew neck and relaxed fit, this tee
+                                        offers timeless style that can be effortlessly paired with any outfit.
                                     </p>
                                 </div>
                             </div>
 
-                            <div class="border-b border-dotted border-gray-500">
+                            <div class="border-b border-dotted border-gray-500 py-4">
                                 <div class=" dropdown-header flex justify-between py-2">
                                     <h4 class="font-gothic font-bold">Specifications</h4>
                                     <div><i class="dropdown-icon fa-solid fa-plus"></i></div>
                                 </div>
-                                <div class="dropdown-detail hidden">
-                                    <p>Material: 100% organic cotton</p>
-                                    <p>Available Color: Brown</p>
-                                    <p>Sizes: XS, S, M, L, XL, XXL</p>
-                                    <p class="mb-2">Care Instructions: Machine wash cold, tumble dry low</p>
+                                <div class="dropdown-detail bg-light-beige p-6 rounded-md text-base hidden">
+                                    <p class="text-base"> <span class="font-bold">Material: </span>100% organic cotton
+                                    </p>
+                                    <p class="text-base"> <span class="font-bold">Available Color: </span>Brown</p>
+                                    <p class="text-base"><span class="font-bold">Sizes: </span> XS, S, M, L, XL, XXL</p>
+                                    <p class="text-base mb-2"><span class="font-bold">Care Instructions: </span>Machine
+                                        wash cold, tumble dry low</p>
                                 </div>
                             </div>
                         </div>

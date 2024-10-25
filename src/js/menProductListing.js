@@ -1,10 +1,10 @@
-import { MobileNavbar } from './modules/MobileNavbar.js';
+import { mobileNavbar } from './modules/mobileNavbar.js';
 import { fetchProductList } from "./modules/FetchProductList.js"
-import { fetchFilterOptions, fetchFilterCategory } from "./modules/FetchFilter.js"
-import { dropdownWithPlus } from "./modules/DropdownWithPlus.js";
+import { fetchFilterOptions, fetchFilterCategory } from "./modules/fetchFilter.js"
+import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    MobileNavbar();
+    mobileNavbar();
 
     // filters
     fetchFilterCategory('data/filters.json',

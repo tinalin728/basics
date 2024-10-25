@@ -1,7 +1,7 @@
-import { MobileNavbar } from './modules/MobileNavbar.js';
+import { mobileNavbar } from './modules/mobileNavbar.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-    MobileNavbar();
+    mobileNavbar();
 
 
     // highlgiht animation
