@@ -12,7 +12,7 @@ class MyHeader extends HTMLElement {
                 <ul class="block mt-16 z-50 cursor-pointer lg:flex lg:items-center lg:justify-center lg:gap-12 lg:mt-0">
                     <li class="relative border-b-[1px] group lg:border-0">
                         <div class="navbar_menu_wrapper">
-                            <a href="product_home.html">Men</a>
+                            <a href="productHome.html">Men</a>
                             <span class="js-toggle-submenu">
                                 <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
                             </span>
@@ -21,11 +21,11 @@ class MyHeader extends HTMLElement {
                         <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
                             <ul class="lg:w-[150px]">
                                 <li class="navbar_submenu">
-                                    <a href="#">New
+                                    <a href="menProductListing.html">New
                                         Arrivals</a>
                                 </li>
                                 <li class="navbar_submenu">
-                                    <a href=" #">Best
+                                    <a href="#">Best
                                         Sellers</a>
                                 </li>
                                 <li class="navbar_submenu">
@@ -155,7 +155,7 @@ class MyFooter extends HTMLElement {
                 <div class="flex flex-col gap-4">
                     <h3 class="text-light-grey">Basics.</h3>
                     <ul class="text-white flex flex-col gap-2">
-                        <li class="hover:text-gold transition duration-300"><a href=" about.html">About Us</a></li>
+                        <li class="hover:text-gold transition duration-300"><a href="about.html">About Us</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Contact Us</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Terms of Service</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Cookies Used</a></li>

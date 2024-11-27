@@ -1,6 +1,6 @@
 import { mobileNavbar } from './modules/mobileNavbar.js';
 import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
-import { fetchSimilarProducts } from './modules/FetchSimilarProducts.js';
+import { fetchSimilarProducts } from './modules/fetchSimilarProducts.js';
 import { productCarousel } from './modules/productCarousel.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log('Target Element:', targetEl); // Should not be null
 
         productCarousel(similarProducts, targetElement);
+        toggleFav();
+
     } catch (error) {
         console.error('Failed to fetch or display similar products:', error);
     }

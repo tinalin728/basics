@@ -58,7 +58,7 @@
             "price": "$60.99",
             "image": "assets/images/menProducts/men3.jpg",
             "alt": "man wearing an essential zip-up hoodie",
-            "link": "#"
+            "link": "productDetail.html"
         },
         {
             "id": 6,
@@ -147,7 +147,7 @@
             "price": "$60.99",
             "image": "assets/images/menProducts/men3.jpg",
             "alt": "man wearing an essential zip-up hoodie",
-            "link": "#",
+            "link": "productDetail.html",
             "detailedImages": [
                 {
                     "image": "assets/images/menProducts/men3-Zipup.png",

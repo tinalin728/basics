@@ -1,7 +1,8 @@
 import { mobileNavbar } from './modules/mobileNavbar.js';
-import { fetchProductList } from "./modules/FetchProductList.js"
+import { fetchProductList } from "./modules/fetchProductList.js"
 import { fetchFilterOptions, fetchFilterCategory } from "./modules/fetchFilter.js"
 import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
+import { toggleFav } from './modules/ToggleFav.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     mobileNavbar();
@@ -26,7 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ])
 
     // product listing
-    fetchProductList('data/products.json', '#product-list', 'menProducts');
+    fetchProductList('data/products.json', '#product-list', 'menProducts', () => {
+        console.log('Simple test callback executed');
+        toggleFav()
+    });
 
 
     dropdownWithPlus('.js-filter-expand', '.js-filter-menu', '.js-filter-icon');
@@ -72,4 +76,5 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     });
+
 })
