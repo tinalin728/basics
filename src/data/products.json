@@ -5,7 +5,7 @@
             "tagline": "Discover Eco-Friendly Basics.",
             "title": "Mix & Match",
             "subtitle": "with Sustainable Fall Outfits",
-            "image": "assets/images/home/homeBanner1.jpg",
+            "image": "src/assets/images/home/homeBanner1.jpg",
             "alt": "Eco-friendly and sustainable outfit collection for fall, featuring mix and match styles in green fashion",
             "link": "#"
         },
@@ -14,7 +14,7 @@
             "tagline": "Winter is Coming!",
             "title": "Winter New Releases",
             "subtitle": "Shop the Latest Sustainable Essentials",
-            "image": "assets/images/home/homeBanner2.jpg",
+            "image": "src/assets/images/home/homeBanner2.jpg",
             "alt": "Promotional banner for eco-friendly winter fashion release, featuring sustainable green fashion essentials",
             "link": "#"
         }
@@ -24,7 +24,7 @@
             "id": 1,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men1.jpg",
+            "image": "src/assets/images/menProducts/men1.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -32,7 +32,7 @@
             "id": 2,
             "name": "Cropped Polo",
             "price": "$60",
-            "image": "assets/images/femaleProducts/women1.jpg",
+            "image": "src/assets/images/femaleProducts/women1.jpg",
             "alt": "a cropped polo",
             "link": "#"
         },
@@ -40,7 +40,7 @@
             "id": 3,
             "name": "Cotton T-shirt",
             "price": "$60",
-            "image": "assets/images/femaleProducts/women2.jpg",
+            "image": "src/assets/images/femaleProducts/women2.jpg",
             "alt": " a cotton T-shirt",
             "link": "#"
         },
@@ -48,7 +48,7 @@
             "id": 4,
             "name": "Basics. Everyday Sweat Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men2.jpg",
+            "image": "src/assets/images/menProducts/men2.jpg",
             "alt": "man wearing an everyday sweatshirt",
             "link": "#"
         },
@@ -56,7 +56,7 @@
             "id": 5,
             "name": "Essential Zip-Up Hoodie",
             "price": "$60.99",
-            "image": "assets/images/menProducts/men3.jpg",
+            "image": "src/assets/images/menProducts/men3.jpg",
             "alt": "man wearing an essential zip-up hoodie",
             "link": "productDetail.html"
         },
@@ -64,7 +64,7 @@
             "id": 6,
             "name": "Press T-Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men4.jpg",
+            "image": "src/assets/images/menProducts/men4.jpg",
             "alt": "man wearing a press T-shirt",
             "link": "#"
         }
@@ -72,31 +72,31 @@
     "instagramPosts": [
         {
             "id": 1,
-            "image": "assets/images/home/ig1.jpg",
+            "image": "src/assets/images/home/ig1.jpg",
             "alt": "instagram post 1",
             "link": "#"
         },
         {
             "id": 2,
-            "image": "assets/images/home/ig2.jpg",
+            "image": "src/assets/images/home/ig2.jpg",
             "alt": "instagram post 2",
             "link": "#"
         },
         {
             "id": 3,
-            "image": "assets/images/home/ig3.jpg",
+            "image": "src/assets/images/home/ig3.jpg",
             "alt": "instagram post 3",
             "link": "#"
         },
         {
             "id": 4,
-            "image": "assets/images/home/ig4.jpg",
+            "image": "src/assets/images/home/ig4.jpg",
             "alt": "instagram post 4",
             "link": "#"
         },
         {
             "id": 5,
-            "image": "assets/images/home/ig5.jpg",
+            "image": "src/assets/images/home/ig5.jpg",
             "alt": "instagram post 5",
             "link": "#"
         }
@@ -105,21 +105,21 @@
         {
             "id": 1,
             "title": "Essential Basics",
-            "image": "assets/images/home/homeFeature1.jpg",
+            "image": "src/assets/images/home/homeFeature1.jpg",
             "alt": "Essential basics clothing category",
             "link": "#"
         },
         {
             "id": 2,
             "title": "Season Staples",
-            "image": "assets/images/home/homeFeature2.jpg",
+            "image": "src/assets/images/home/homeFeature2.jpg",
             "alt": "Season staples clothing category",
             "link": "#"
         },
         {
             "id": 3,
             "title": "ECOBasics",
-            "image": "assets/images/home/homeFeature3.jpg",
+            "image": "src/assets/images/home/homeFeature3.jpg",
             "alt": "ECOBasics clothing category",
             "link": "#"
         }
@@ -129,7 +129,7 @@
             "id": 1,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men1.jpg",
+            "image": "src/assets/images/menProducts/men1.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -137,7 +137,7 @@
             "id": 2,
             "name": "Basics. Everyday Sweat Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men2.jpg",
+            "image": "src/assets/images/menProducts/men2.jpg",
             "alt": "man wearing an everyday sweatshirt",
             "link": "#"
         },
@@ -145,20 +145,20 @@
             "id": 3,
             "name": "Essential Zip-Up Hoodie",
             "price": "$60.99",
-            "image": "assets/images/menProducts/men3.jpg",
+            "image": "src/assets/images/menProducts/men3.jpg",
             "alt": "man wearing an essential zip-up hoodie",
             "link": "productDetail.html",
             "detailedImages": [
                 {
-                    "image": "assets/images/menProducts/men3-Zipup.png",
+                    "image": "src/assets/images/menProducts/men3-Zipup.png",
                     "alt": "zip up back view"
                 },
                 {
-                    "image": "assets/images/menProducts/men3-Zipup2.png",
+                    "image": "src/assets/images/menProducts/men3-Zipup2.png",
                     "alt": "zip up front view zipper close up"
                 },
                 {
-                    "image": "assets/images/menProducts/men3-Zipup3.png",
+                    "image": "src/assets/images/menProducts/men3-Zipup3.png",
                     "alt": "zip up front view pocket close up"
                 }
             ],
@@ -167,7 +167,7 @@
                     "id": 1,
                     "name": "Ripstop Shirt",
                     "price": "$60",
-                    "image": "assets/images/menProducts/men1.jpg",
+                    "image": "src/assets/images/menProducts/men1.jpg",
                     "alt": "man wearing a ripstop shirt",
                     "link": "#"
                 },
@@ -175,7 +175,7 @@
                     "id": 2,
                     "name": "Basics. Everyday Sweat Shirt",
                     "price": "$60",
-                    "image": "assets/images/menProducts/men2.jpg",
+                    "image": "src/assets/images/menProducts/men2.jpg",
                     "alt": "man wearing an everyday sweatshirt",
                     "link": "#"
                 },
@@ -183,7 +183,7 @@
                     "id": 4,
                     "name": "Press T-Shirt",
                     "price": "$60",
-                    "image": "assets/images/menProducts/men4.jpg",
+                    "image": "src/assets/images/menProducts/men4.jpg",
                     "alt": "man wearing a press T-shirt",
                     "link": "#"
                 }
@@ -193,7 +193,7 @@
             "id": 4,
             "name": "Press T-Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men4.jpg",
+            "image": "src/assets/images/menProducts/men4.jpg",
             "alt": "man wearing a press T-shirt",
             "link": "#"
         },
@@ -201,7 +201,7 @@
             "id": 5,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men5.jpg",
+            "image": "src/assets/images/menProducts/men5.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -209,7 +209,7 @@
             "id": 6,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men6.jpg",
+            "image": "src/assets/images/menProducts/men6.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -217,7 +217,7 @@
             "id": 7,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men7.jpg",
+            "image": "src/assets/images/menProducts/men7.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -225,7 +225,7 @@
             "id": 8,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men8.jpg",
+            "image": "src/assets/images/menProducts/men8.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -233,7 +233,7 @@
             "id": 9,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men9.jpg",
+            "image": "src/assets/images/menProducts/men9.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         },
@@ -241,7 +241,7 @@
             "id": 10,
             "name": "Ripstop Shirt",
             "price": "$60",
-            "image": "assets/images/menProducts/men10.jpg",
+            "image": "src/assets/images/menProducts/men10.jpg",
             "alt": "man wearing a ripstop shirt",
             "link": "#"
         }
