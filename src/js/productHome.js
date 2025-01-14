@@ -1,6 +1,6 @@
-import { mobileNavbar } from './modules/MobileNavbar.js';
+import { mobileNavbar } from './modules/mobileNavbar.js';
 import { productCard } from "./modules/ProductCard.js"
-import { toggleFav } from './modules/ToggleFav.js';
+import { toggleFav } from './modules/toggleFav.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
