@@ -1,6 +1,6 @@
 
-import { mobileNavbar } from './modules/MobileNavbar.js';
-import { productCarousel } from './modules/ProductCarousel.js';
+import { mobileNavbar } from './modules/mobileNavbar.js';
+import { productCarousel } from './modules/productCarousel.js';
 import { fetchFeatureCard } from './modules/dataFetching/fetchFeaturedCard.js';
 
 

@@ -1,5 +1,5 @@
 import { mobileNavbar } from './modules/mobileNavbar.js';
-import { productCard } from "./modules/ProductCard.js"
+import { productCard } from "./modules/productCard.js"
 import { toggleFav } from './modules/toggleFav.js';
 
 

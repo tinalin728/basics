@@ -1,4 +1,4 @@
-import { productCard } from "../ProductCard.js";
+import { productCard } from "../productCard.js";
 
 
 export function fetchProductList(dataPath, containerId, productType, callback) {
