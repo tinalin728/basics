@@ -24,9 +24,7 @@ export function mobileNavbar() {
 
             submenu.classList.toggle('hidden');
             if (arrowIcon) {
-                arrowIcon.classList.toggle("fa-angle-down");
-                arrowIcon.classList.toggle("fa-angle-up");
-
+                arrowIcon.classList.toggle("rotate-180");
             }
         });
     });

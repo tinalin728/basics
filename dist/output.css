@@ -611,8 +611,15 @@ h3 {
 
 h4 {
   font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 a {
@@ -642,8 +649,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 90rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -944,6 +951,14 @@ img {
   top: 100%;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -976,6 +991,11 @@ img {
   float: right;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -984,11 +1004,6 @@ img {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-0 {
@@ -1075,6 +1090,10 @@ img {
   height: 1px;
 }
 
+.h-\[2\.2rem\] {
+  height: 2.2rem;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
@@ -1119,6 +1138,10 @@ img {
   width: 150px;
 }
 
+.w-\[2\.2rem\] {
+  width: 2.2rem;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -1143,20 +1166,12 @@ img {
   width: 100%;
 }
 
-.max-w-\[30rem\] {
-  max-width: 30rem;
-}
-
-.max-w-\[600px\] {
-  max-width: 600px;
-}
-
 .max-w-\[40rem\] {
   max-width: 40rem;
 }
 
-.max-w-\[50rem\] {
-  max-width: 50rem;
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .flex-1 {
@@ -1186,6 +1201,11 @@ img {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1196,6 +1216,10 @@ img {
 
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
@@ -1357,6 +1381,10 @@ img {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
@@ -1418,6 +1446,11 @@ img {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1470,10 +1503,6 @@ img {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-center {
@@ -1545,6 +1574,10 @@ img {
 
 .italic {
   font-style: italic;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .tracking-wide {
@@ -1814,16 +1847,20 @@ img {
     display: block;
   }
 
+  .md\:h-\[2\.5rem\] {
+    height: 2.5rem;
+  }
+
   .md\:h-\[200px\] {
     height: 200px;
   }
 
-  .md\:w-\[200px\] {
-    width: 200px;
+  .md\:w-\[2\.5rem\] {
+    width: 2.5rem;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:w-\[200px\] {
+    width: 200px;
   }
 
   .md\:flex-row {
@@ -1867,9 +1904,19 @@ img {
     text-align: left;
   }
 
+  .md\:text-2xl {
+    font-size: 22px;
+    line-height: 29.26px;
+  }
+
   .md\:text-6xl {
     font-size: 52px;
     line-height: 60px;
+  }
+
+  .md\:text-lg {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -1922,6 +1969,11 @@ img {
     width: auto;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:grow-0 {
     flex-grow: 0;
   }
@@ -1949,6 +2001,10 @@ img {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:items-center {
@@ -1995,6 +2051,11 @@ img {
   .lg\:text-7xl {
     font-size: 65px;
     line-height: 80px;
+  }
+
+  .lg\:text-xl {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .lg\:shadow-lg {

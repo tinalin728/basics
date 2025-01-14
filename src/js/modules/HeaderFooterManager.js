@@ -14,7 +14,7 @@ class MyHeader extends HTMLElement {
                         <div class="navbar_menu_wrapper">
                             <a href="productHome.html">Men</a>
                             <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
+                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon transition-transform duration-300"></i>
                             </span>
                         </div>
                         <!-- submenu -->
@@ -42,7 +42,7 @@ class MyHeader extends HTMLElement {
                         <div class="navbar_menu_wrapper">
                             <a href="#">Women</a>
                             <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
+                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon transition-transform duration-300"></i>
                             </span>
                         </div>
                         <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
@@ -68,7 +68,7 @@ class MyHeader extends HTMLElement {
                         <div class="navbar_menu_wrapper">
                             <a href="#">Sales</a>
                             <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon"></i>
+                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon transition-transform duration-300"></i>
                             </span>
                         </div>
                         <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
@@ -134,14 +134,14 @@ class MyFooter extends HTMLElement {
             `
             <footer class="bg-dark-grey">
         <div class="max-container  py-12 md:py-14 lg:py-16">
-            <div class="flex flex-col gap-8 justify-between lg:flex-row">
-                <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-8 justify-between items-center lg:flex-row lg:items-start">
+                <div class="flex flex-col items-center gap-4 lg:items-start">
                     <h3 class="text-light-grey">Subscribe to Our Newsletter</h3>
                     <form>
-                        <input class="p-2 mb-4" type="email" placeholder="Enter your email" required>
-                        <button class="primary-cta  py-2" type="submit">Submit</button>
+                        <input class="p-2 mb-4 w-full lg:w-fit" type="email" placeholder="Enter your email" required>
+                        <button class="primary-cta  py-2 w-full lg:w-fit" type="submit">Submit</button>
                     </form>
-                    <div class="text-white flex gap-4 ">
+                    <div class="text-white flex gap-4">
                         <a href="#" class="text-xl hover:text-gold transition duration-300"><i
                                 class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-xl hover:text-gold transition duration-300"><i
@@ -152,18 +152,18 @@ class MyFooter extends HTMLElement {
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col items-center gap-4 lg:items-start">
                     <h3 class="text-light-grey">Basics.</h3>
-                    <ul class="text-white flex flex-col gap-2">
+                    <ul class="text-white flex flex-col items-center gap-2 lg:items-start">
                         <li class="hover:text-gold transition duration-300"><a href="about.html">About Us</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Contact Us</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Terms of Service</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Cookies Used</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col items-center gap-4 lg:items-start">
                     <h3 class="text-light-grey">Support</h3>
-                    <ul class="text-white flex flex-col gap-2">
+                    <ul class="text-white flex flex-col items-center gap-2 lg:items-start">
                         <li class="hover:text-gold transition duration-300"><a href="#">FAQ</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Help Center</a></li>
                         <li class="hover:text-gold transition duration-300"><a href="#">Privacy Policy</a></li>

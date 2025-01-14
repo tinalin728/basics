@@ -1,7 +1,7 @@
 
 import { mobileNavbar } from './modules/mobileNavbar.js';
 import { productCarousel } from './modules/productCarousel.js';
-import { fetchFeatureCard } from './modules/fetchFeaturedCard.js';
+import { fetchFeatureCard } from './modules/dataFetching/fetchFeaturedCard.js';
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 infinite: true,
                 autoplay: false,
                 speed: 1500,
+                arrows: false,
                 responsive: [
                     {
                         breakpoint: 1125,
@@ -90,13 +91,25 @@ document.addEventListener("DOMContentLoaded", function () {
                     {
                         breakpoint: 880,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 3,
+                            autoplay: true,
+                            autoplaySpeed: 0,
+                            speed: 7000,
+                            cssEase: "linear",
+                            pauseOnHover: true
+
                         }
                     },
                     {
                         breakpoint: 500,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 2,
+                            autoplay: true,
+                            autoplaySpeed: 0,
+                            speed: 7000,
+                            cssEase: "linear",
+                            pauseOnHover: true
+
                         }
                     },
                 ]

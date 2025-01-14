@@ -23,7 +23,7 @@
     }
 
     h4 {
-        @apply text-lg font-arial;
+        @apply text-base md:text-lg font-arial;
     }
 
     a {
@@ -39,7 +39,7 @@
     }
 
     .max-container {
-        @apply max-w-[90rem] px-8 mx-auto lg:px-12 xl:px-16;
+        @apply max-w-[90rem] px-6 mx-auto lg:px-12 xl:px-16;
     }
 
     main {

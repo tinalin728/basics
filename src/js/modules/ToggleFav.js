@@ -3,14 +3,19 @@ export function toggleFav() {
 
     heartButtons.forEach((button) => {
         button.addEventListener('click', () => {
-
-            const heartIcon = button.querySelector('i');
+            const heartIcon = button.querySelector('i'); // Select the icon inside the button
             if (heartIcon) {
-                const currentColor = heartIcon.style.color;
-                heartIcon.style.color = currentColor === 'red' ? 'white' : 'red'
+                // Check the current class and toggle
+                if (heartIcon.classList.contains('fa-regular')) {
+                    heartIcon.classList.remove('fa-regular');
+                    heartIcon.classList.add('fa');
+                    heartIcon.classList.add('!text-red-500');
+                } else {
+                    heartIcon.classList.remove('fa');
+                    heartIcon.classList.add('fa-regular');
+                }
             }
         });
-
-        console.log('toggled!')
     });
+    console.log('Toggle event attached!');
 }

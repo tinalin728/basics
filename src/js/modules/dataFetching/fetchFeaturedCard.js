@@ -17,5 +17,4 @@ export function fetchFeatureCard(dataType, containerId, featuredType) {
             });
         })
         .catch(error => console.error('Error fetching data:', error));
-
 }

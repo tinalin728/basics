@@ -15,11 +15,12 @@ export function productCarousel(data, targetElement) {
     });
 
     $(productCarouselContainer).slick({
-
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: ".arrow-prev",
         nextArrow: ".arrow-nxt",
+        centerMode: false,
+        infinite: false,
         responsive: [
             {
                 breakpoint: 768,
@@ -31,7 +32,7 @@ export function productCarousel(data, targetElement) {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.2,
                     slidesToScroll: 1,
                 }
             }

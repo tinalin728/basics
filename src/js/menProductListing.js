@@ -1,6 +1,7 @@
 import { mobileNavbar } from './modules/mobileNavbar.js';
-import { fetchProductList } from "./modules/fetchProductList.js"
-import { fetchFilterOptions, fetchFilterCategory } from "./modules/fetchFilter.js"
+import { fetchProductList } from "./modules/dataFetching/fetchProductList.js";
+import { fetchFilterCategory } from "./modules/dataFetching/fetchFilterCategory.js";
+import { fetchFilterOptions } from './modules/dataFetching/fetchFilterOptions.js';
 import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
 import { toggleFav } from './modules/ToggleFav.js';
 
@@ -28,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // product listing
     fetchProductList('data/products.json', '#product-list', 'menProducts', () => {
-        console.log('Simple test callback executed');
         toggleFav()
     });
 
