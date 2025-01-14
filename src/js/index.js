@@ -2,6 +2,7 @@
 import { mobileNavbar } from './modules/mobileNavbar.js';
 import { productCarousel } from './modules/productCarousel.js';
 import { fetchFeatureCard } from './modules/dataFetching/fetchFeaturedCard.js';
+import { toggleFav } from './modules/toggleFav.js';
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             productCarousel(data.newArrivals, '#arrivals-list');
+            toggleFav();
         })
         .catch(error => console.error('Error fetching the JSON data:', error));
 
