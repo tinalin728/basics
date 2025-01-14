@@ -2,6 +2,7 @@ import { mobileNavbar } from './modules/MobileNavbar.js';
 import { dropdownWithPlus } from "./modules/DropdownWithPlus.js";
 import { fetchSimilarProducts } from './modules/dataFetching/fetchSimilarProducts.js';
 import { productCarousel } from './modules/ProductCarousel.js';
+import { toggleFav } from './modules/ToggleFav.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     mobileNavbar();
