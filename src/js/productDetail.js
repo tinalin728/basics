@@ -1,7 +1,7 @@
-import { mobileNavbar } from './modules/mobileNavbar.js';
-import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
+import { mobileNavbar } from './modules/MobileNavbar.js';
+import { dropdownWithPlus } from "./modules/DropdownWithPlus.js";
 import { fetchSimilarProducts } from './modules/dataFetching/fetchSimilarProducts.js';
-import { productCarousel } from './modules/productCarousel.js';
+import { productCarousel } from './modules/ProductCarousel.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     mobileNavbar();
