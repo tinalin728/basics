@@ -1,12 +1,12 @@
-import { mobileNavbar } from './modules/mobileNavbar.js';
-import { productCard } from "./modules/productCard.js"
+import { mobileNavbar } from './modules/MobileNavbar.js';
+import { productCard } from "./modules/ProductCard.js"
 import { toggleFav } from './modules/ToggleFav.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
     mobileNavbar();
 
-    fetch('data/products.json')
+    fetch('src/data/products.json')
         .then((res) => res.json())
         .then((data) => {
             const limitedProducts = data['menProducts'].slice(0, 6);
