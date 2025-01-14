@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     dropdownWithPlus('.dropdown-header', '.dropdown-detail', '.dropdown-icon');
 
+    toggleFav();
 
     const productId = 3;
     const targetElement = '.similar-product-list';

@@ -9,10 +9,11 @@ export function toggleFav() {
                 if (heartIcon.classList.contains('fa-regular')) {
                     heartIcon.classList.remove('fa-regular');
                     heartIcon.classList.add('fa');
-                    heartIcon.classList.add('!text-red-500');
+                    heartIcon.style.color = 'red';
                 } else {
                     heartIcon.classList.remove('fa');
                     heartIcon.classList.add('fa-regular');
+                    heartIcon.style.color = '';
                 }
             }
         });
