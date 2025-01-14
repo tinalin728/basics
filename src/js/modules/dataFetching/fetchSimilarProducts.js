@@ -1,6 +1,6 @@
 export async function fetchSimilarProducts(productId) {
     try {
-        const response = await fetch('src/data/products.json');
+        const response = await fetch('../../data/products.json');
         const data = await response.json();
 
         // Find the product with the given productId
