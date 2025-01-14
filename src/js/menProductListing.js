@@ -1,8 +1,8 @@
-import { mobileNavbar } from './modules/mobileNavbar.js';
+import { mobileNavbar } from './modules/MobileNavbar.js';
 import { fetchProductList } from "./modules/dataFetching/fetchProductList.js";
 import { fetchFilterCategory } from "./modules/dataFetching/fetchFilterCategory.js";
 import { fetchFilterOptions } from './modules/dataFetching/fetchFilterOptions.js';
-import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
+import { dropdownWithPlus } from "./modules/DropdownWithPlus.js";
 import { toggleFav } from './modules/ToggleFav.js';
 
 document.addEventListener("DOMContentLoaded", () => {
