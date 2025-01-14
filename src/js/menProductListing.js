@@ -9,26 +9,26 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNavbar();
 
     // filters
-    fetchFilterCategory('data/filters.json',
+    fetchFilterCategory('src/data/filters.json',
         [
             { filterCatType: 'categories', containerId: '#categories-list' },
             { filterCatType: 'collections', containerId: '#collection-list' }
         ]
     );
 
-    fetchFilterOptions('data/filters.json', [
+    fetchFilterOptions('src/data/filters.json', [
         { filterOptType: 'sizes.letters', containerId: '#size-filter' },
         { filterOptType: 'sizes.numbers', containerId: '#size-filter' },
         { filterOptType: 'colors', containerId: '#color-filter' }
     ])
-    fetchFilterOptions('data/filters.json', [
+    fetchFilterOptions('src/data/filters.json', [
         { filterOptType: 'sizes.letters', containerId: '#mobile-size-filter' },
         { filterOptType: 'sizes.numbers', containerId: '#mobile-size-filter' },
         { filterOptType: 'colors', containerId: '#mobile-color-filter' }
     ])
 
     // product listing
-    fetchProductList('data/products.json', '#product-list', 'menProducts', () => {
+    fetchProductList('src/data/products.json', '#product-list', 'menProducts', () => {
         toggleFav()
     });
 
