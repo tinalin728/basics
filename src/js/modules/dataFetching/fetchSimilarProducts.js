@@ -16,7 +16,7 @@
 // }
 export async function fetchSimilarProducts(productId) {
     try {
-        const response = await fetch('../../../data/products.json');
+        const response = await fetch('/data/products.json');
         
         // Check if the response is OK (status code 200-299)
         if (!response.ok) {
