@@ -18,7 +18,7 @@ class MyHeader extends HTMLElement {
                             </span>
                         </div>
                         <!-- submenu -->
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:group-hover:block">
+                        <div class="js-submenu hidden cursor-pointer lg:absolute lg:-left-4 lg:group-hover:block">
                             <ul class="lg:w-[150px]">
                                 <li class="navbar_submenu">
                                     <a href="menProductListing.html">New
@@ -46,7 +46,7 @@ class MyHeader extends HTMLElement {
                             </span>
                         </div>
                         <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
-                            <ul class="">
+                            <ul class="cursor-pointer">
                                 <li class="navbar_submenu">
                                     <a href="#">New
                                         Arrivals</a>

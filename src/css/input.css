@@ -27,11 +27,11 @@
     }
 
     a {
-        @apply text-base;
+        @apply text-base cursor-pointer;
     }
 
     i {
-        @apply text-xl
+        @apply text-xl cursor-pointer;
     }
 
     p {
@@ -68,11 +68,11 @@
     }
 
     .navbar_menu_arrow-icon {
-        @apply text-xl text-center lg:transform lg:transition-transform lg:duration-200 ease-in-out lg:group-hover:rotate-180;
+        @apply text-xl text-center lg:transform lg:transition-transform lg:duration-500 ease-in-out lg:group-hover:rotate-45;
     }
 
     .navbar_submenu {
-        @apply py-4 pl-6 bg-white hover:bg-light-blue transition duration-500 ease-in-out lg:whitespace-nowrap lg:p-4;
+        @apply py-4 pl-6 bg-white hover:bg-light-blue transition duration-500 ease-in-out lg:whitespace-nowrap lg:p-4 cursor-pointer;
     }
 
     /* hero slick */
