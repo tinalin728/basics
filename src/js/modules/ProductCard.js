@@ -10,10 +10,10 @@ export function productCard(product) {
                         </div>
                     </div>
 
-                    <div class="hidden md:block">
-                    <div class="absolute bottom-6 right-0 left-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
-                        <a href="#" class="bg-gold text-white py-2 px-10 rounded-full">Quick Overview</a>
-                    </div>
+                    <div class="hidden lg:block">
+                        <div class="absolute bottom-6 right-0 left-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-20">
+                            <a href="#" class="bg-gold text-white py-2 px-10 rounded-full">Quick Overview</a>
+                        </div>
                      </div>
 
                     <img src="${product.image}" alt="${product.alt}" class="w-full">

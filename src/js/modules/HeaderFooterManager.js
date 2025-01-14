@@ -14,11 +14,11 @@ class MyHeader extends HTMLElement {
                         <div class="navbar_menu_wrapper">
                             <a href="productHome.html">Men</a>
                             <span class="js-toggle-submenu">
-                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon transition-transform duration-300"></i>
+                                <i class="js-arrow-icon fa fa-angle-down navbar_menu_arrow-icon transition-transform duration-300"> </i>
                             </span>
                         </div>
                         <!-- submenu -->
-                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:shadow-lg lg:group-hover:block">
+                        <div class="js-submenu hidden lg:absolute lg:-left-4 lg:group-hover:block">
                             <ul class="lg:w-[150px]">
                                 <li class="navbar_submenu">
                                     <a href="menProductListing.html">New
