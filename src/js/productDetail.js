@@ -1,5 +1,5 @@
 import { mobileNavbar } from './modules/mobileNavbar.js';
-import { dropdownWithPlus } from "./modules/DropdownWithPlus.js";
+import { dropdownWithPlus } from "./modules/dropdownWithPlus.js";
 import { fetchSimilarProducts } from './modules/dataFetching/fetchSimilarProducts.js';
 import { productCarousel } from './modules/productCarousel.js';
 import { toggleFav } from './modules/toggleFav.js';

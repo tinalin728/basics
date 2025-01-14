@@ -1,4 +1,4 @@
-import { productCard } from "./ProductCard.js";
+import { productCard } from "./productCard.js";
 
 export function productCarousel(data, targetElement) {
     const productCarouselContainer = document.querySelector(targetElement);
