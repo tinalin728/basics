@@ -7,10 +7,10 @@ import { fetchFeatureCard } from './modules/dataFetching/fetchFeaturedCard.js';
 document.addEventListener("DOMContentLoaded", function () {
     mobileNavbar();
 
-    fetchFeatureCard('data/products.json', '#featured-category-output', 'featuredCategories');
+    fetchFeatureCard('src/data/products.json', '#featured-category-output', 'featuredCategories');
 
     //fetch hero data
-    fetch("data/products.json")
+    fetch("src/data/products.json")
         .then(res => res.json())
         .then(data => {
             //console.log('Fetched Data:', data);
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error fetching the JSON data:', error));
 
     // fetch new arrival data
-    fetch('data/products.json')
+    fetch('src/data/products.json')
         .then(response => response.json())
         .then(data => {
             productCarousel(data.newArrivals, '#arrivals-list');
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error fetching the JSON data:', error));
 
     // fetch social media data 
-    fetch('data/products.json')
+    fetch('src/data/products.json')
         .then(response => response.json())
         .then(data => {
             const smPosts = document.querySelector('#sm-posts-output');
